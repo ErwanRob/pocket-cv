@@ -1,0 +1,66 @@
+@use "abstracts" as abs;
+@use "base" as base;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+h1,
+h2,
+h3,
+button,
+p,
+ul,
+li,
+textarea,
+input,
+form {
+  all: unset;
+}
+
+html {
+  /*   -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  overflow-x: hidden; */
+  position: relative;
+}
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: abs.$white;
+  background: abs.$dark-grey;
+  position: relative;
+}
+
+.App {
+  /* @include abs.flxAllCtrBox; */
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.mainContainer {
+  @include abs.flxAllCtrBox;
+  padding: 5rem 0rem;
+  width: 100%;
+  height: 100%;
+
+  background-color: abs.$active-purple;
+  /* filter: brightness(0.5); */
+}
+
+.a4SizedContainer {
+  background-color: abs.$light-grey;
+  border: 3px solid abs.$white;
+
+  @media print {
+    width: 210mm;
+    height: 297mm;
+  }
+
+  @media screen {
+    width: 794px; /* Adjust as needed for a screen preview */
+    height: 1123px;
+  }
+}
