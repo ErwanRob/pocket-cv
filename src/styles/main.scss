@@ -46,13 +46,14 @@ body {
   width: 100%;
   height: 100%;
 
-  background-color: abs.$active-purple;
+  background-color: abs.$light-purple;
   /* filter: brightness(0.5); */
 }
 
 .a4SizedContainer {
+  z-index: 1;
   background-color: abs.$light-grey;
-  border: 3px solid abs.$white;
+  /*   border: 1px solid black; */
 
   @media print {
     width: 210mm;

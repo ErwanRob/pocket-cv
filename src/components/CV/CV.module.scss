@@ -1,0 +1,39 @@
+@use "../../styles/abstracts" as abs;
+@use "../../styles/base" as base;
+
+.cv {
+  @include abs.flxAllCtrBox;
+  @include abs.fullSize;
+  background-color: abs.$light-grey;
+  color: black;
+
+  &__layoutGrid {
+    box-sizing: border-box;
+    @include abs.fullSize;
+    display: grid;
+    gap: 0rem;
+    grid-template-columns: 33% auto;
+    grid-template-rows: 20% auto;
+    grid-template-areas:
+      "topSection topSection"
+      "leftSection rightSection";
+
+    &__topSection {
+      grid-area: topSection;
+      background-color: #272e3e;
+    }
+
+    &__leftSection {
+      grid-area: leftSection;
+    }
+
+    &__rightSection {
+      grid-area: rightSection;
+      background-color: abs.$mid-grey;
+    }
+
+    /*   &__bottomSection {
+      grid-area: bottomSection;
+    } */
+  }
+}
