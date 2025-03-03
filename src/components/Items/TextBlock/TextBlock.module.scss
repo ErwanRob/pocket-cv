@@ -1,0 +1,75 @@
+@use "../../../styles/abstracts/" as abs;
+
+.textBlock {
+  @include abs.flxAllCtrBox;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  /*   background-color: rgba(0, 0, 255, 0.226); */
+  padding: 0.5rem 1rem;
+
+  /* s */
+
+  &__title {
+    /* border-top: 2px solid abs.$gold; */
+    border-bottom: 2px solid abs.$gold;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: abs.$blue;
+    text-transform: uppercase;
+    padding: 0.5rem 0 0.25rem 0;
+    margin: 0 0 0.5rem 0;
+    letter-spacing: 1px;
+  }
+  &__subtitleContainer {
+    @include abs.flxAllCtrBox;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+
+    &__subtitle {
+      display: flex;
+      justify-content: flex-start;
+      box-sizing: border-box;
+      width: auto;
+      height: auto;
+      font-size: 1rem;
+      font-weight: 400;
+      color: abs.$gold;
+      padding: 0 1rem 0 0;
+      white-space: nowrap;
+    }
+
+    &__separator {
+      @include abs.flxAllCtrBox;
+      width: 100%;
+      height: 1px;
+      background-color: abs.$gold;
+    }
+    &__date {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-end;
+      width: auto;
+      height: auto;
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: abs.$gold;
+      white-space: nowrap;
+      padding: 0 0 0 1rem;
+    }
+  }
+
+  &__text {
+    @include abs.flxAllCtrBox;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+}

@@ -13,23 +13,37 @@
     display: grid;
     gap: 0rem;
     grid-template-columns: 33% auto;
-    grid-template-rows: 20% auto;
+    grid-template-rows: 25% auto;
     grid-template-areas:
       "topSection topSection"
       "leftSection rightSection";
 
     &__topSection {
       grid-area: topSection;
-      background-color: #272e3e;
+      @include abs.flxAllCtrBox;
+      @include abs.fullSize;
+      width: 100%;
+      height: 100%;
+      background-color: abs.$blue;
+    }
+
+    &__rightSection,
+    &__leftSection {
+      @include abs.flxAllCtrBox;
+      @include abs.fullSize;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
     }
 
     &__leftSection {
       grid-area: leftSection;
+      background: abs.$grad-leftSection, abs.$grad-leftSection2;
     }
 
     &__rightSection {
       grid-area: rightSection;
-      background-color: abs.$mid-grey;
+      /*   background-color: abs.$mid-grey; */
     }
 
     /*   &__bottomSection {
