@@ -1,21 +1,22 @@
 import styles from "./Header.module.scss";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className={styles.header}>
       <nav className={styles["header__nav"]}>
-        <ul className={styles["header__nav__list"]}>
-          <li className={styles["header__nav__list__item"]}>
-            <a href="#" className={styles["header__nav__list__item__link"]}>
-              CV for developers
-            </a>
-          </li>
-          <li className={styles["header__nav__list__item"]}>
-            <a href="#" className={styles["header__nav__list__item__link"]}>
-              CV for general jobs
-            </a>
-          </li>
-        </ul>
+        <Link className={styles["header__nav__link"]} to="/cv/fr/barrista">
+          Barrista (FR)
+        </Link>
+        <Link className={styles["header__nav__link"]} to="/cv/fr/frontEnd">
+          Front-End (FR)
+        </Link>
+        <Link className={styles["header__nav__link"]} to="/cv/en/barrista">
+          Barrista (EN)
+        </Link>
+        <Link className={styles["header__nav__link"]} to="/cv/en/frontEnd">
+          Front-End (EN)
+        </Link>
       </nav>
     </div>
   );

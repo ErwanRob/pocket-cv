@@ -12,7 +12,7 @@
 
   &__title {
     /* border-top: 2px solid abs.$gold; */
-    border-bottom: 2px solid abs.$gold;
+    border-bottom: 1px solid abs.$blue;
     box-sizing: border-box;
     width: 100%;
     height: auto;
@@ -24,42 +24,62 @@
     margin: 0 0 0.5rem 0;
     letter-spacing: 1px;
   }
-  &__subtitleContainer {
+
+  &__jobTitle {
     @include abs.flxAllCtrBox;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
     height: auto;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: abs.$blue;
+    padding: 0.25rem 0;
+    &-alignCenter {
+      justify-content: center;
+      font-size: 1.125rem;
+      font-weight: 700;
+    }
+  }
+  &__subtitleContainer {
+    @include abs.flxAllCtrBox;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    gap: 0.5rem;
 
     &__subtitle {
       display: flex;
       justify-content: flex-start;
+      align-items: center;
       box-sizing: border-box;
       width: auto;
-      height: auto;
+      height: 100%;
       font-size: 1rem;
       font-weight: 400;
       color: abs.$gold;
-      padding: 0 1rem 0 0;
+      /*   padding: 0 1rem 0 0; */
       white-space: nowrap;
     }
 
     &__separator {
       @include abs.flxAllCtrBox;
-      width: 100%;
-      height: 1px;
+      width: 1px;
+      height: 1rem;
       background-color: abs.$gold;
     }
     &__date {
       box-sizing: border-box;
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
+      align-items: center;
       width: auto;
-      height: auto;
+      height: 100%;
       font-size: 0.8rem;
-      font-weight: 300;
+      font-weight: 400;
       color: abs.$gold;
       white-space: nowrap;
-      padding: 0 0 0 1rem;
+      padding: 0.25rem 0;
+      /*   padding: 0 0 0 1rem; */
     }
   }
 
@@ -69,7 +89,12 @@
     box-sizing: border-box;
     width: 100%;
     height: auto;
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-weight: 200;
+    &-alignCenter {
+      text-align: center;
+      font-size: 0.875rem;
+      font-weight: 200;
+    }
   }
 }

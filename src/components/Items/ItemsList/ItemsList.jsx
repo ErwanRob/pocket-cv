@@ -3,7 +3,25 @@ import styles from "./ItemsList.module.scss";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faEarthEurope } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+
 const ItemsList = ({ title, source, hasIcons = false }) => {
+  const iconMap = {
+    faEnvelope,
+    faPhone,
+    faHome,
+    faEarthEurope,
+    faLinkedinIn,
+    faGithub,
+    faInstagram,
+  };
+
   return (
     <div className={styles.itemsList}>
       <h3 className={styles["itemsList__title"]}>{title}</h3>
@@ -17,7 +35,7 @@ const ItemsList = ({ title, source, hasIcons = false }) => {
                 ]
               }
             >
-              {hasIcons ? <FontAwesomeIcon icon={item.icon} /> : null}
+              {hasIcons ? <FontAwesomeIcon icon={iconMap[item.icon]} /> : null}
             </div>
             <p className={styles["itemsList__container__item__txt"]}>
               {item.text}

@@ -1,0 +1,88 @@
+{
+  "TBL": {
+    "Studies": [
+      {
+        "id": "study1",
+        "title": "BAC S",
+        "subtitle": "S.I.",
+        "text": "Baccalauréat Scientifique (Option Sciences de l'Ingénieur).",
+        "date": "2012 - 2013"
+      },
+      {
+        "id": "study2",
+        "title": "Diplôme d'intégrateur Web",
+        "subtitle": "OpenClassrooms",
+        "text": "Acquisition de compétences via 12 projets de développement web validés par des professionnels. Formation axée sur l'apprentissage du CSS, HTML, JavaScript et React & Redux.",
+        "date": "2023-2024"
+      }
+    ],
+    "Experiences": [
+      {
+        "id": "exp1",
+        "title": "Head of Design",
+        "subtitle": "CreatLinx, Londres",
+        "text": "Co-fondateur d'une start-up blockchain/cryptomonnaie. Recrutement, validation des designs, développement, et participation à la stratégie. Soft Skills : polyvalence, adaptabilité, créativité.",
+        "date": "2017 - 2019"
+      },
+      {
+        "id": "exp2",
+        "title": "Diverses fonctions dans la restauration",
+        "subtitle": "Huttopia, Columbus, F&Co., Strasbourg",
+        "text": "Cuisinier et serveur dans un restaurant pendant 2 ans. Animateur et Bartender dans un camping durant la période saisonnière.",
+        "date": "2019 - 2022"
+      },
+      {
+        "id": "exp3",
+        "title": "Employé Polyvalent",
+        "subtitle": "Auchan, Illkirch",
+        "text": "Employé polyvalent dans un supermarché au sein de l'équipe de maintenance. Remplissage et maintien des rayons, accueil et conseil client, manipulation des stocks, et formation à l'utilisation de machines spécialisées.",
+        "date": "Décembre 2024"
+      }
+    ],
+    "Hobbies": [
+      {
+        "id": "hob1",
+        "title": "Musique",
+        "text": "Guitare, Piano, Pad, MAO (connaissances avancées sur FL Studio et utilisation de nombreux plugins audio)."
+      }
+    ],
+    "Profil": [
+      {
+        "id": "prof1",
+        "title": "Profil",
+        "text": "Passionné par le développement web, j'ai acquis de l'expérience dans la restauration et le service client. Autodidacte et apprenant rapidement, je recherche un poste pour développer mes projets personnels tout en subvenant à mes besoins."
+      }
+    ]
+  },
+  "DTL": {
+    "Contact": [
+      { "id": "cf1", "icon": "faEnvelope", "text": "erobin.contact@gmail.com" },
+      { "id": "cf2", "icon": "faPhone", "text": "06 10 50 28 37" },
+      { "id": "cf3", "icon": "faHome", "text": "Strasbourg (67)" },
+      { "id": "cf4", "icon": "faEarthEurope", "text": "France" },
+      { "id": "cf5", "icon": "faLinkedinIn", "text": "Erwan Robin" },
+      { "id": "cf6", "icon": "faGithub", "text": "ErwanRob" },
+      { "id": "cf7", "icon": "faInstagram", "text": "erwan.rob" }
+    ],
+    "Socials": [
+      { "id": "sc1", "icon": "faGithub", "text": "ErwanRob" },
+      { "id": "sc2", "icon": "faLinkedinIn", "text": "Erwan Robin" },
+      { "id": "sc3", "icon": "faInstagram", "text": "erwan.rob" }
+    ],
+    "Values": [
+      { "id": "val1", "text": "Autonomie" },
+      { "id": "val2", "text": "Communication" },
+      { "id": "val3", "text": "Esprit d'equipe" },
+      { "id": "val4", "text": "Persérvérence" }
+    ],
+    "Skills": [
+      { "id": "sk1", "text": "Service" },
+      { "id": "sk2", "text": "Relation client" },
+      { "id": "sk3", "text": "Manutention" }
+    ],
+    "Language": [
+      { "id": "lang1", "text": "Français" },
+      { "id": "lang2", "text": "Anglais (Avancé)" }
+    ]
+  }
+}

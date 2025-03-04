@@ -37,12 +37,16 @@
     }
 
     &__leftSection {
+      padding: 1rem 0 0 0;
       grid-area: leftSection;
-      background: abs.$grad-leftSection, abs.$grad-leftSection2;
+      border-right: 1px solid abs.$blue;
+
+      background: abs.$grad-leftSection;
     }
 
     &__rightSection {
       grid-area: rightSection;
+      background: abs.$grad-leftSection2;
       /*   background-color: abs.$mid-grey; */
     }
 

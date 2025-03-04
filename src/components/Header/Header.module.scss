@@ -3,7 +3,7 @@
 .header {
   position: relative;
   z-index: 999;
-  background: abs.$darker-grey;
+  background: abs.$blue;
   width: 100%;
   height: 4rem;
   @include abs.flxAllCtrBox;
@@ -11,16 +11,31 @@
   transform-origin: top;
 
   &__nav {
-    display: flex;
+    box-sizing: border-box;
+    @include abs.flxAllCtrBox;
     max-width: 1200px;
+    height: 100%;
+    gap: 1rem;
+    padding: 0.5rem;
 
-    &__list {
+    &__link {
+      border-radius: 4px;
       @include abs.flxAllCtrBox;
-      gap: 2rem;
       list-style: none;
-      width: 100%;
+      width: auto;
+      height: 100%;
+      text-decoration: none;
+      padding: 0.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: abs.$medium-grey-rgba;
+      &:hover {
+        background-color: abs.$dark-grey;
+        scale: 0.975;
+        color: abs.$gold;
+      }
 
-      &__item {
+      /* &__item {
         border-radius: 4px;
         @include abs.flxAllCtrBox;
         &__link {
@@ -33,11 +48,9 @@
             scale: 1.025;
             color: abs.$hover-purple2;
           }
-          @include abs.respond-to-custom("md", "sm") {
-            font-size: 1rem;
-          }
+        
         }
-      }
+      } */
     }
   }
 }

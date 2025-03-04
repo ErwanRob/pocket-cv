@@ -1,6 +1,7 @@
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import CV from "./components/CV/CV.jsx";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (
@@ -8,7 +9,10 @@ function App() {
       <Header />
       <div className="mainContainer">
         <div className="a4SizedContainer">
-          <CV />
+          <Routes>
+            <Route path="/" element={<Navigate to="/cv/fr/barrista" />} />
+            <Route path="/cv/:language/:cvType" element={<CV />} />
+          </Routes>
         </div>
       </div>
       <Footer />

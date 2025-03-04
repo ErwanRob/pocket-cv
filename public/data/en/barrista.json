@@ -1,0 +1,88 @@
+{
+  "TBL": {
+    "Studies": [
+      {
+        "id": "study1",
+        "title": "Scientific Baccalaureate",
+        "subtitle": "Engineering Sciences",
+        "text": "Scientific Baccalaureate (Engineering Sciences option).",
+        "date": "2012 - 2013"
+      },
+      {
+        "id": "study2",
+        "title": "Web Integrator Diploma",
+        "subtitle": "OpenClassrooms",
+        "text": "Acquired skills through 12 web development projects validated by professionals. Training focused on learning CSS, HTML, JavaScript, and React & Redux.",
+        "date": "2023-2024"
+      }
+    ],
+    "Experiences": [
+      {
+        "id": "exp1",
+        "title": "Head of Design",
+        "subtitle": "CreatLinx, London",
+        "text": "Co-founder of a blockchain/cryptocurrency startup. Responsible for recruitment, design validation, development, and strategic planning. Soft skills: versatility, adaptability, creativity.",
+        "date": "2017 - 2019"
+      },
+      {
+        "id": "exp2",
+        "title": "Various Roles in the Restaurant Industry",
+        "subtitle": "Huttopia, Columbus, F&Co., Strasbourg",
+        "text": "Cook and waiter in a restaurant for 2 years. Animator and bartender at a camping site during the seasonal period.",
+        "date": "2019 - 2022"
+      },
+      {
+        "id": "exp3",
+        "title": "Versatile Employee",
+        "subtitle": "Auchan, Illkirch",
+        "text": "Versatile employee in a supermarket within the maintenance team. Responsible for restocking and maintaining shelves, customer service and advice, inventory handling, and training on specialized machinery.",
+        "date": "December 2024"
+      }
+    ],
+    "Hobbies": [
+      {
+        "id": "hob1",
+        "title": "Music",
+        "text": "Guitar, Piano, Pad, Digital Audio Workstation (advanced knowledge of FL Studio and numerous audio plugins)."
+      }
+    ],
+    "Profil": [
+      {
+        "id": "prof1",
+        "title": "Profile",
+        "text": "Passionate about web development, I have gained experience in the restaurant and customer service sectors. Self-taught and a fast learner, I am seeking a position that allows me to develop my personal projects while meeting my needs."
+      }
+    ]
+  },
+  "DTL": {
+    "Contact": [
+      { "id": "cf1", "icon": "faEnvelope", "text": "erobin.contact@gmail.com" },
+      { "id": "cf2", "icon": "faPhone", "text": "06 10 50 28 37" },
+      { "id": "cf3", "icon": "faHome", "text": "Strasbourg (67)" },
+      { "id": "cf4", "icon": "faEarthEurope", "text": "France" },
+      { "id": "cf5", "icon": "faLinkedinIn", "text": "Erwan Robin" },
+      { "id": "cf6", "icon": "faGithub", "text": "ErwanRob" },
+      { "id": "cf7", "icon": "faInstagram", "text": "erwan.rob" }
+    ],
+    "Socials": [
+      { "id": "sc1", "icon": "faGithub", "text": "ErwanRob" },
+      { "id": "sc2", "icon": "faLinkedinIn", "text": "Erwan Robin" },
+      { "id": "sc3", "icon": "faInstagram", "text": "erwan.rob" }
+    ],
+    "Values": [
+      { "id": "val1", "text": "Autonomy" },
+      { "id": "val2", "text": "Communication" },
+      { "id": "val3", "text": "Team Work" },
+      { "id": "val4", "text": "Perseverance" }
+    ],
+    "Skills": [
+      { "id": "sk1", "text": "Service" },
+      { "id": "sk2", "text": "Customer Relations" },
+      { "id": "sk3", "text": "Manual Handling" }
+    ],
+    "Language": [
+      { "id": "lang1", "text": "French" },
+      { "id": "lang2", "text": "English (Advanced)" }
+    ]
+  }
+}
