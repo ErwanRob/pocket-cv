@@ -8,11 +8,11 @@ const Header = () => {
         <Link className={styles["header__nav__link"]} to="/cv/fr/barrista">
           Barrista (FR)
         </Link>
-        <Link className={styles["header__nav__link"]} to="/cv/fr/frontEnd">
-          Front-End (FR)
-        </Link>
         <Link className={styles["header__nav__link"]} to="/cv/en/barrista">
           Barrista (EN)
+        </Link>
+        <Link className={styles["header__nav__link"]} to="/cv/fr/frontEnd">
+          Front-End (FR)
         </Link>
         <Link className={styles["header__nav__link"]} to="/cv/en/frontEnd">
           Front-End (EN)

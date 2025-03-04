@@ -11,7 +11,7 @@ import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
-const ItemsList = ({ title, source, hasIcons = false }) => {
+const ItemsList = ({ title, source, hasIcons = false, layoutId }) => {
   const iconMap = {
     faEnvelope,
     faPhone,
@@ -22,22 +22,40 @@ const ItemsList = ({ title, source, hasIcons = false }) => {
     faInstagram,
   };
 
+  const itemsListVariant = {
+    itemsListVariant1: {
+      itemsListClass: styles.itemsList1,
+    },
+    itemsListVariant2: {
+      itemsListClass: styles.itemsList2,
+    },
+  };
+
+  const currentItem =
+    itemsListVariant[`itemsListVariant${layoutId}`] ||
+    itemsListVariant.itemsListVariant1;
+
   return (
-    <div className={styles.itemsList}>
-      <h3 className={styles["itemsList__title"]}>{title}</h3>
-      <div className={styles["itemsList__container"]}>
+    <div className={currentItem.itemsListClass}>
+      <h3 className={styles[`itemsList${layoutId}__title`]}>{title}</h3>
+      <div className={styles[`itemsList${layoutId}__container`]}>
         {source.map((item) => (
-          <div key={item.text} className={styles["itemsList__container__item"]}>
+          <div
+            key={item.text}
+            className={styles[`itemsList${layoutId}__container__item`]}
+          >
             <div
               className={
                 styles[
-                  `itemsList__container__item__bullet${hasIcons ? "-icon" : ""}`
+                  `itemsList${layoutId}__container__item__bullet${
+                    hasIcons ? "-icon" : ""
+                  }`
                 ]
               }
             >
               {hasIcons ? <FontAwesomeIcon icon={iconMap[item.icon]} /> : null}
             </div>
-            <p className={styles["itemsList__container__item__txt"]}>
+            <p className={styles[`itemsList${layoutId}__container__item__txt`]}>
               {item.text}
             </p>
           </div>
@@ -51,7 +69,7 @@ ItemsList.propTypes = {
   title: PropTypes.string.isRequired,
   source: PropTypes.array.isRequired,
   hasIcons: PropTypes.bool,
-  /* variant: PropTypes.string, */
+  layoutId: PropTypes.string,
 };
 
 export default ItemsList;

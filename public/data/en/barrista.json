@@ -56,13 +56,13 @@
   },
   "DTL": {
     "Contact": [
-      { "id": "cf1", "icon": "faEnvelope", "text": "erobin.contact@gmail.com" },
-      { "id": "cf2", "icon": "faPhone", "text": "06 10 50 28 37" },
-      { "id": "cf3", "icon": "faHome", "text": "Strasbourg (67)" },
+      { "id": "cf1", "icon": "faLinkedinIn", "text": "Erwan Robin" },
+      { "id": "cf2", "icon": "faGithub", "text": "ErwanRob" },
+      { "id": "cf3", "icon": "faInstagram", "text": "erwan.rob" },
       { "id": "cf4", "icon": "faEarthEurope", "text": "France" },
-      { "id": "cf5", "icon": "faLinkedinIn", "text": "Erwan Robin" },
-      { "id": "cf6", "icon": "faGithub", "text": "ErwanRob" },
-      { "id": "cf7", "icon": "faInstagram", "text": "erwan.rob" }
+      { "id": "cf5", "icon": "faHome", "text": "Strasbourg (67)" },
+      { "id": "cf6", "icon": "faPhone", "text": "06 10 50 28 37" },
+      { "id": "cf7", "icon": "faEnvelope", "text": "erobin.contact@gmail.com" }
     ],
     "Socials": [
       { "id": "sc1", "icon": "faGithub", "text": "ErwanRob" },

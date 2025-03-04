@@ -1,0 +1,94 @@
+@use "../../styles/abstracts/" as abs;
+
+.layoutGrid1 {
+  box-sizing: border-box;
+  @include abs.fullSize;
+  display: grid;
+  gap: 0rem;
+  grid-template-columns: 33% auto;
+  grid-template-rows: 25% auto;
+  grid-template-areas:
+    "topSection topSection"
+    "leftSection rightSection";
+
+  &__topSection {
+    grid-area: topSection;
+    @include abs.flxAllCtrBox;
+    @include abs.fullSize;
+    width: 100%;
+    height: 100%;
+    background-color: abs.$blue;
+  }
+
+  &__rightSection,
+  &__leftSection {
+    @include abs.flxAllCtrBox;
+    @include abs.fullSize;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__leftSection {
+    padding: 1rem 0 0 0;
+    grid-area: leftSection;
+    border-right: 1px solid abs.$blue;
+
+    /*   background: abs.$grad-leftSection; */
+  }
+
+  &__rightSection {
+    grid-area: rightSection;
+    /*   background: abs.$grad-leftSection2; */
+    /*   background-color: abs.$mid-grey; */
+  }
+
+  &__bottomSection {
+    grid-area: bottomSection;
+  }
+}
+
+.layoutGrid2 {
+  box-sizing: border-box;
+  @include abs.fullSize;
+  display: grid;
+  gap: 0rem;
+  grid-template-columns: 35% auto;
+  grid-template-rows: auto;
+  grid-template-areas: "leftSection rightSection";
+
+  &__topSection {
+    grid-area: topSection;
+    @include abs.flxAllCtrBox;
+    @include abs.fullSize;
+    width: 100%;
+    height: 100%;
+    background-color: abs.$blue;
+  }
+
+  &__rightSection,
+  &__leftSection {
+    @include abs.flxAllCtrBox;
+    @include abs.fullSize;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__leftSection {
+    padding: 0rem 0 0 0;
+    grid-area: leftSection;
+    border-right: 4px solid abs.$gold;
+    background-color: abs.$blue;
+  }
+
+  &__rightSection {
+    grid-area: rightSection;
+    background: abs.$light-grey;
+    /*   background-color: abs.$mid-grey; */
+  }
+
+  &__bottomSection {
+    grid-area: bottomSection;
+  }
+}

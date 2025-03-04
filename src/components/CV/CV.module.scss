@@ -7,7 +7,34 @@
   background-color: abs.$light-grey;
   color: black;
 
-  &__layoutGrid {
+  &__layoutButton {
+    z-index: 100;
+    position: absolute;
+    @include abs.flxAllCtrBox;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding: 1.5rem;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    top: 40%;
+    right: 1rem;
+    color: abs.$gold;
+    background-color: abs.$darker-grey;
+    &__display {
+      @include abs.flxAllCtrBox;
+      padding: 1rem 0 0 0;
+      font-weight: 200;
+      margin-left: 0.5rem;
+      color: white;
+      text-transform: uppercase;
+    }
+    @media print {
+      display: none;
+    }
+  }
+
+  /*   &__layoutGrid {
     box-sizing: border-box;
     @include abs.fullSize;
     display: grid;
@@ -47,11 +74,19 @@
     &__rightSection {
       grid-area: rightSection;
       background: abs.$grad-leftSection2;
-      /*   background-color: abs.$mid-grey; */
     }
 
-    /*   &__bottomSection {
+      &__bottomSection {
       grid-area: bottomSection;
-    } */
-  }
+    }
+  } */
+}
+
+.loading {
+  @include abs.fullSize;
+  @include abs.flxAllCtrBox;
+  background-color: abs.$light-grey;
+  color: black;
+  font-size: 5rem;
+  font-weight: 500;
 }

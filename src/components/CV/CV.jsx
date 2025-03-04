@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import styles from "./CV.module.scss";
-import Portrait from "../Items/Portrait/Portrait.jsx";
-import ItemsList from "../Items/ItemsList/ItemsList.jsx";
-import HeadBand from "../Items/HeadBand/HeadBand.jsx";
-import TextBlock from "../Items/TextBlock/TextBlock.jsx";
+
+import CVLayout from "../CVLayout/CVLayout.jsx";
 
 const CV = () => {
   const { language, cvType } = useParams();
   const [data, setData] = useState(null);
+  const [layoutType, setLayoutType] = useState("layout1");
+
+  const handleLayout = () => {
+    setLayoutType((prev) => (prev === "layout1" ? "layout2" : "layout1"));
+  };
 
   useEffect(() => {
     const url = `/data/${language}/${cvType}.json`;
@@ -20,44 +23,24 @@ const CV = () => {
         setData(data);
       })
       .catch((error) => console.error("Error fetching data:", error));
+
+    //set layout type based on cvType if needed later on (barrista vs frontEnd)
+    setLayoutType(cvType === "barrista" ? "layout1" : "layout2");
   }, [language, cvType]);
 
   if (!data) {
-    return <div>Loading...</div>;
+    return <div className="loading">Loading...</div>;
   }
 
   return (
     <div className={styles.cv}>
-      <div className={styles["cv__layoutGrid"]}>
-        <div className={styles["cv__layoutGrid__topSection"]}>
-          <HeadBand />
-        </div>
-        <div className={styles["cv__layoutGrid__leftSection"]}>
-          {/*   <p>{data.TBL.Test[0].title}</p> */}
-          <TextBlock source={data.TBL.Profil[0]} center={true} />
-          <Portrait />
-          <ItemsList title="Valeurs" source={data.DTL.Values} />
-          {/*   <ItemsList
-            title="Contact"
-            source={data.DTL.Contact}
-            hasIcons={true}
-          /> */}
-          <ItemsList title="Competences" source={data.DTL.Skills} />
-          <ItemsList title="Langue" source={data.DTL.Language} />
-        </div>
-        <div className={styles["cv__layoutGrid__rightSection"]}>
-          {/*     <p>{data.TBL.Test[0].title}</p> */}
-          <TextBlock blockTitle="Experience" source={data.TBL.Experiences[2]} />
-          <TextBlock source={data.TBL.Experiences[1]} />
-          <TextBlock source={data.TBL.Experiences[0]} />
-          <TextBlock blockTitle="Education" source={data.TBL.Studies[1]} />
-          <TextBlock source={data.TBL.Studies[0]} />
-          <TextBlock
-            blockTitle="A propos de moi"
-            source={data.TBL.Hobbies[0]}
-          />
-        </div>
-      </div>
+      <CVLayout layoutType={layoutType} data={data} />
+      <button className={styles["cv__layoutButton"]} onClick={handleLayout}>
+        Change layout :
+        <span className={styles["cv__layoutButton__display"]}>
+          {layoutType}
+        </span>
+      </button>
     </div>
   );
 };
