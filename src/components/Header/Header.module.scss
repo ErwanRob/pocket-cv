@@ -5,8 +5,9 @@
   z-index: 999;
   background: abs.$blue;
   width: 100%;
-  height: 4rem;
+  height: auto;
   @include abs.flxAllCtrBox;
+  justify-content: space-between;
   padding: 0 1rem;
   transform-origin: top;
 
@@ -34,23 +35,25 @@
         scale: 0.975;
         color: abs.$gold;
       }
-
-      /* &__item {
-        border-radius: 4px;
-        @include abs.flxAllCtrBox;
-        &__link {
-          text-decoration: none;
-          padding: 0.5rem;
-          font-size: 1.25rem;
-          font-weight: 200;
-          color: abs.$medium-grey-rgba;
-          &:hover {
-            scale: 1.025;
-            color: abs.$hover-purple2;
-          }
-        
-        }
-      } */
+    }
+  }
+  &__downloadButton {
+    border-radius: 4px;
+    right: 0;
+    @include abs.flxAllCtrBox;
+    list-style: none;
+    width: auto;
+    height: 100%;
+    text-decoration: none;
+    padding: 1rem 0.5rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: abs.$medium-grey-rgba;
+    &:hover {
+      background-color: rgba(34, 119, 23, 0.749);
+      scale: 0.975;
+      color: abs.$light-grey;
     }
   }
 }

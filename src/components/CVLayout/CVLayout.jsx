@@ -7,7 +7,6 @@ import TextBlock from "../Items/TextBlock/TextBlock.jsx";
 
 const CVLayout = ({ layoutType, data }) => {
   const layoutId = layoutType === "layout1" ? "1" : "2";
-
   const layouts = {
     layout1: {
       gridClass: styles.layoutGrid1,
@@ -15,18 +14,17 @@ const CVLayout = ({ layoutType, data }) => {
         top: () => <HeadBand />,
         left: () => (
           <>
-            <TextBlock source={data.TBL.Profil[0]} center={true} />
+            <TextBlock
+              source={data.TBL.Profil[0]}
+              center={true}
+              layoutId={layoutId}
+            />
             <Portrait layoutId={layoutId} />
             <ItemsList
               title="Valeurs"
               source={data.DTL.Values}
               layoutId={layoutId}
             />
-            {/*   <ItemsList
-                    title="Contact"
-                    source={data.DTL.Contact}
-                    hasIcons={true}
-                  /> */}
             <ItemsList
               title="Competences"
               source={data.DTL.Skills}
@@ -44,14 +42,20 @@ const CVLayout = ({ layoutType, data }) => {
             <TextBlock
               blockTitle="Experience"
               source={data.TBL.Experiences[2]}
+              layoutId={layoutId}
             />
-            <TextBlock source={data.TBL.Experiences[1]} />
-            <TextBlock source={data.TBL.Experiences[0]} />
-            <TextBlock blockTitle="Education" source={data.TBL.Studies[1]} />
-            <TextBlock source={data.TBL.Studies[0]} />
+            <TextBlock source={data.TBL.Experiences[1]} layoutId={layoutId} />
+            <TextBlock source={data.TBL.Experiences[0]} layoutId={layoutId} />
+            <TextBlock
+              blockTitle="Formation"
+              source={data.TBL.Studies[1]}
+              layoutId={layoutId}
+            />
+            <TextBlock source={data.TBL.Studies[0]} layoutId={layoutId} />
             <TextBlock
               blockTitle="A propos de moi"
               source={data.TBL.Hobbies[0]}
+              layoutId={layoutId}
             />
           </>
         ),
@@ -90,18 +94,28 @@ const CVLayout = ({ layoutType, data }) => {
         ),
         right: () => (
           <>
-            <TextBlock source={data.TBL.Profil[0]} center={false} />
+            <TextBlock
+              source={data.TBL.Profil[0]}
+              center={false}
+              layoutId={layoutId}
+            />
             <TextBlock
               blockTitle="Experience"
               source={data.TBL.Experiences[2]}
+              layoutId={layoutId}
             />
-            <TextBlock source={data.TBL.Experiences[1]} />
-            <TextBlock source={data.TBL.Experiences[0]} />
-            <TextBlock blockTitle="Education" source={data.TBL.Studies[1]} />
-            <TextBlock source={data.TBL.Studies[0]} />
+            <TextBlock source={data.TBL.Experiences[1]} layoutId={layoutId} />
+            <TextBlock source={data.TBL.Experiences[0]} layoutId={layoutId} />
+            <TextBlock
+              blockTitle="Formation"
+              source={data.TBL.Studies[1]}
+              layoutId={layoutId}
+            />
+            <TextBlock source={data.TBL.Studies[0]} layoutId={layoutId} />
             <TextBlock
               blockTitle="A propos de moi"
               source={data.TBL.Hobbies[0]}
+              layoutId={layoutId}
             />
           </>
         ),

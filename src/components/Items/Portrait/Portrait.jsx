@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Portrait.module.scss";
-import portrait from "../../../assets/img/portraitPRO.jpg";
+import portrait from "../../../assets/img/portraitPRO2.jpg";
 
 const Portrait = ({ layoutId }) => {
   const portraitVariant = {
@@ -20,11 +20,13 @@ const Portrait = ({ layoutId }) => {
   return (
     <div className={currentPortrait.portraitClass}>
       <div className={styles[`portrait${layoutId}__container`]}>
-        <img
-          className={styles[`portrait${layoutId}__container__img`]}
-          src={portrait}
-          alt="selfPortrait"
-        />
+        <div className={styles[`portrait${layoutId}__container__imgborder`]}>
+          <img
+            className={styles[`portrait${layoutId}__container__imgborder__img`]}
+            src={portrait}
+            alt="selfPortrait"
+          />
+        </div>
       </div>
     </div>
   );

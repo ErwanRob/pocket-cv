@@ -7,40 +7,42 @@
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  margin: 1rem 0 1.5rem 0;
-
+  margin: 1rem 0 1rem 0;
   padding: 1rem;
 
   /* background-color: abs.$gold; */
   /*   clip-path: polygon(10% 0%, 97% 0%, 90% 100%, 3% 100%); */
 
   &__container {
-    @include abs.flxAllCtrBox;
-    width: 9rem;
-    height: 9rem;
-    border-radius: 9999px;
-    overflow: hidden;
     /*   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
     /*   clip-path: circle(50% at 50% 50%); */
-    &::after {
-      position: absolute;
-      z-index: 1;
-      content: "";
+    @include abs.flxAllCtrBox;
+    width: 10.25rem;
+    height: 10.25rem;
+    border-radius: 9999px;
+    filter: drop-shadow(0 0 0.25rem black);
+    background-color: abs.$gold;
+
+    &__imgborder {
+      overflow: hidden;
+      z-index: 0;
       @include abs.flxAllCtrBox;
-      width: 9.25rem;
-      height: 9.25rem;
+      width: 10rem;
+      height: 10rem;
       background-color: abs.$gold;
       border-radius: 9999px;
-      filter: drop-shadow(0 0 0.25rem black);
-    }
 
-    &__img {
-      z-index: 2;
-      @include abs.flxAllCtrBox;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
+      &__img {
+        z-index: 2;
+        @include abs.flxAllCtrBox;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
     }
   }
 }
@@ -60,32 +62,32 @@
   /*   clip-path: polygon(10% 0%, 97% 0%, 90% 100%, 3% 100%); */
 
   &__container {
-    @include abs.flxAllCtrBox;
-    width: 12rem;
-    height: 12rem;
-    border-radius: 9999px;
-    overflow: hidden;
     /*   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
     /*   clip-path: circle(50% at 50% 50%); */
-    &::after {
-      position: absolute;
-      z-index: 1;
-      content: "";
+    @include abs.flxAllCtrBox;
+    width: 12.25rem;
+    height: 12.25rem;
+    border-radius: 9999px;
+    /* filter: drop-shadow(0 0 0.25rem black); */
+    background-color: abs.$dark-purple;
+
+    &__imgborder {
+      overflow: hidden;
+      z-index: 0;
       @include abs.flxAllCtrBox;
-      width: 12.25rem;
-      height: 12.25rem;
+      width: 12rem;
+      height: 12rem;
       background-color: abs.$gold;
       border-radius: 9999px;
-      filter: drop-shadow(0 0 0.25rem black);
-    }
 
-    &__img {
-      z-index: 2;
-      @include abs.flxAllCtrBox;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
+      &__img {
+        z-index: 2;
+        @include abs.flxAllCtrBox;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
     }
   }
 }

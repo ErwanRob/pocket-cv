@@ -18,12 +18,12 @@ form {
 }
 
 html {
-  /*   -ms-overflow-style: none;
+  -ms-overflow-style: none;
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
   }
-  overflow-x: hidden; */
+  overflow-x: hidden;
   position: relative;
 }
 body {
@@ -54,7 +54,7 @@ body {
 .a4SizedContainer {
   z-index: 1;
   background-color: abs.$light-grey;
-  /*   border: 1px solid black; */
+  overflow: hidden;
 
   @media print {
     width: 210mm;
@@ -62,7 +62,9 @@ body {
   }
 
   @media screen {
-    width: 794px; /* Adjust as needed for a screen preview */
-    height: 1123px;
+    width: 210mm;
+    height: 297mm;
+    /*   width: 794px;
+    height: 1123px; */
   }
 }

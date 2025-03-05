@@ -1,6 +1,7 @@
 @use "../../../styles/abstracts" as abs;
 
 .itemsList1 {
+  line-height: 1.2;
   position: relative;
   @include abs.flxAllCtrBox;
   flex-direction: column;
@@ -47,20 +48,27 @@
       height: auto;
       gap: 0.5rem;
 
-      &__bullet {
+      &__bulletContainer {
         @include abs.flxAllCtrBox;
         width: 1rem;
         height: 1rem;
-        color: abs.$gold;
-        clip-path: circle(30% at 50% 50%);
-        background: abs.$grad-lS;
-        &-icon {
+
+        &__bullet {
           @include abs.flxAllCtrBox;
-          width: 1rem;
-          height: 1rem;
+          width: 0.5rem;
+          height: 0.5rem;
           color: abs.$gold;
-          clip-path: none;
-          background: none;
+          border-radius: 9999px;
+          background: abs.$grad-lS;
+
+          &-icon {
+            @include abs.flxAllCtrBox;
+            width: 1rem;
+            height: 1rem;
+            color: abs.$gold;
+            clip-path: none;
+            background: none;
+          }
         }
       }
 
@@ -75,6 +83,7 @@
 }
 
 .itemsList2 {
+  line-height: 1.2;
   position: relative;
   @include abs.flxAllCtrBox;
   flex-direction: column;
@@ -96,7 +105,7 @@
     gap: 0.5rem;
     font-size: 1.125rem;
     font-weight: 300;
-    color: abs.$gold;
+    color: abs.$hover-purple2;
     text-transform: uppercase;
   }
 
@@ -120,21 +129,27 @@
       width: 100%;
       height: auto;
       gap: 0.5rem;
-
-      &__bullet {
+      &__bulletContainer {
         @include abs.flxAllCtrBox;
         width: 1rem;
         height: 1rem;
-        color: abs.$gold;
-        clip-path: circle(30% at 50% 50%);
-        background: abs.$grad-lS;
-        &-icon {
+
+        &__bullet {
           @include abs.flxAllCtrBox;
-          width: 1rem;
-          height: 1rem;
+          width: 0.5rem;
+          height: 0.5rem;
           color: abs.$gold;
-          clip-path: none;
-          background: none;
+          border-radius: 9999px;
+          background: abs.$grad-lS2;
+
+          &-icon {
+            @include abs.flxAllCtrBox;
+            width: 1rem;
+            height: 1rem;
+            color: abs.$hover-purple2;
+            clip-path: none;
+            background: none;
+          }
         }
       }
 

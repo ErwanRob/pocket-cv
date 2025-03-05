@@ -24,10 +24,10 @@ const ItemsList = ({ title, source, hasIcons = false, layoutId }) => {
 
   const itemsListVariant = {
     itemsListVariant1: {
-      itemsListClass: styles.itemsList1,
+      temsListClass: styles.itemsList1,
     },
     itemsListVariant2: {
-      itemsListClass: styles.itemsList2,
+      temsListClass: styles.itemsList2,
     },
   };
 
@@ -36,7 +36,7 @@ const ItemsList = ({ title, source, hasIcons = false, layoutId }) => {
     itemsListVariant.itemsListVariant1;
 
   return (
-    <div className={currentItem.itemsListClass}>
+    <div className={currentItem.temsListClass}>
       <h3 className={styles[`itemsList${layoutId}__title`]}>{title}</h3>
       <div className={styles[`itemsList${layoutId}__container`]}>
         {source.map((item) => (
@@ -46,14 +46,22 @@ const ItemsList = ({ title, source, hasIcons = false, layoutId }) => {
           >
             <div
               className={
-                styles[
-                  `itemsList${layoutId}__container__item__bullet${
-                    hasIcons ? "-icon" : ""
-                  }`
-                ]
+                styles[`itemsList${layoutId}__container__item__bulletContainer`]
               }
             >
-              {hasIcons ? <FontAwesomeIcon icon={iconMap[item.icon]} /> : null}
+              <div
+                className={
+                  styles[
+                    `itemsList${layoutId}__container__item__bulletContainer__bullet${
+                      hasIcons ? "-icon" : ""
+                    }`
+                  ]
+                }
+              >
+                {hasIcons ? (
+                  <FontAwesomeIcon icon={iconMap[item.icon]} />
+                ) : null}
+              </div>
             </div>
             <p className={styles[`itemsList${layoutId}__container__item__txt`]}>
               {item.text}

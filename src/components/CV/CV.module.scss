@@ -21,6 +21,8 @@
     right: 1rem;
     color: abs.$gold;
     background-color: abs.$darker-grey;
+
+    display: none;
     &__display {
       @include abs.flxAllCtrBox;
       padding: 1rem 0 0 0;

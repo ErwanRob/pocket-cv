@@ -1,6 +1,7 @@
 @use "../../styles/abstracts/" as abs;
 
 .layoutGrid1 {
+  line-height: 1.2;
   box-sizing: border-box;
   @include abs.fullSize;
   display: grid;
@@ -39,6 +40,7 @@
 
   &__rightSection {
     grid-area: rightSection;
+
     /*   background: abs.$grad-leftSection2; */
     /*   background-color: abs.$mid-grey; */
   }
@@ -49,6 +51,7 @@
 }
 
 .layoutGrid2 {
+  line-height: 1.2;
   box-sizing: border-box;
   @include abs.fullSize;
   display: grid;
@@ -58,12 +61,8 @@
   grid-template-areas: "leftSection rightSection";
 
   &__topSection {
-    grid-area: topSection;
-    @include abs.flxAllCtrBox;
-    @include abs.fullSize;
-    width: 100%;
-    height: 100%;
-    background-color: abs.$blue;
+    grid-area: rightSection;
+    display: none;
   }
 
   &__rightSection,
@@ -78,8 +77,8 @@
   &__leftSection {
     padding: 0rem 0 0 0;
     grid-area: leftSection;
-    border-right: 4px solid abs.$gold;
-    background-color: abs.$blue;
+    border-right: 4px solid abs.$hover-purple;
+    background-color: abs.$dark-grey;
   }
 
   &__rightSection {
@@ -90,5 +89,6 @@
 
   &__bottomSection {
     grid-area: bottomSection;
+    display: none;
   }
 }

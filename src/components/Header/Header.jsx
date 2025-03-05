@@ -1,7 +1,8 @@
+import PropTypes from "prop-types";
 import styles from "./Header.module.scss";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ downloadPDF }) => {
   return (
     <div className={styles.header}>
       <nav className={styles["header__nav"]}>
@@ -18,8 +19,19 @@ const Header = () => {
           Front-End (EN)
         </Link>
       </nav>
+      <button
+        className={styles["header__downloadButton"]}
+        onClick={downloadPDF}
+      >
+        Download PDF
+      </button>
     </div>
   );
+};
+
+Header.propTypes = {
+  downloadPDF: PropTypes.func.isRequired,
+  handleDownloadImg: PropTypes.func.isRequired,
 };
 
 export default Header;
