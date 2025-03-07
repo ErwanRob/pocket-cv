@@ -11,7 +11,12 @@ import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
-const ItemsList = ({ title, source, hasIcons = false, layoutId }) => {
+const ItemsList = ({
+  blockTitle = false,
+  source,
+  hasIcons = false,
+  layoutId,
+}) => {
   const iconMap = {
     faEnvelope,
     faPhone,
@@ -24,10 +29,10 @@ const ItemsList = ({ title, source, hasIcons = false, layoutId }) => {
 
   const itemsListVariant = {
     itemsListVariant1: {
-      temsListClass: styles.itemsList1,
+      itemsListClass: styles.itemsList1,
     },
     itemsListVariant2: {
-      temsListClass: styles.itemsList2,
+      itemsListClass: styles.itemsList2,
     },
   };
 
@@ -36,10 +41,14 @@ const ItemsList = ({ title, source, hasIcons = false, layoutId }) => {
     itemsListVariant.itemsListVariant1;
 
   return (
-    <div className={currentItem.temsListClass}>
-      <h3 className={styles[`itemsList${layoutId}__title`]}>{title}</h3>
+    <div className={currentItem.itemsListClass}>
+      {blockTitle && (
+        <h3 className={styles[`itemsList${layoutId}__title`]}>
+          {source.blockTitle}
+        </h3>
+      )}
       <div className={styles[`itemsList${layoutId}__container`]}>
-        {source.map((item) => (
+        {source.items.map((item) => (
           <div
             key={item.text}
             className={styles[`itemsList${layoutId}__container__item`]}
@@ -74,8 +83,17 @@ const ItemsList = ({ title, source, hasIcons = false, layoutId }) => {
 };
 
 ItemsList.propTypes = {
-  title: PropTypes.string.isRequired,
-  source: PropTypes.array.isRequired,
+  source: PropTypes.shape({
+    blockTitle: PropTypes.string, // CAREFULL, there is 2 blockTitle
+    items: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        icon: PropTypes.string,
+        text: PropTypes.string.isRequired,
+      })
+    ).isRequired,
+  }).isRequired,
+  blockTitle: PropTypes.bool, // CAREFULL, there is 2 blockTitle
   hasIcons: PropTypes.bool,
   layoutId: PropTypes.string,
 };

@@ -1,88 +1,189 @@
 {
   "TBL": {
-    "Studies": [
-      {
-        "id": "study1",
-        "title": "BAC S",
-        "subtitle": "S.I.",
-        "text": "Baccalauréat Scientifique (Option Sciences de l'Ingénieur).",
-        "date": "2012 - 2013"
-      },
-      {
-        "id": "study2",
-        "title": "Diplôme d'intégrateur Web",
-        "subtitle": "OpenClassrooms",
-        "text": "Acquisition de compétences via 12 projets de développement web validés par des professionnels. Formation axée sur l'apprentissage du CSS, HTML, JavaScript et React & Redux.",
-        "date": "2023-2024"
-      }
-    ],
-    "Experiences": [
-      {
-        "id": "exp1",
-        "title": "Head of Design",
-        "subtitle": "CreatLinx, Londres",
-        "text": "Co-fondateur d'une start-up blockchain/cryptomonnaie. Recrutement, validation des designs, développement, et participation à la stratégie. Soft Skills : polyvalence, adaptabilité, créativité.",
-        "date": "2017 - 2019"
-      },
-      {
-        "id": "exp2",
-        "title": "Diverses fonctions dans la restauration",
-        "subtitle": "Huttopia, Columbus, F&Co., Strasbourg",
-        "text": "Cuisinier et serveur dans un restaurant pendant 2 ans. Animateur et Bartender dans un camping durant la période saisonnière.",
-        "date": "2019 - 2022"
-      },
-      {
-        "id": "exp3",
-        "title": "Employé Polyvalent",
-        "subtitle": "Auchan, Illkirch",
-        "text": "Employé polyvalent dans un supermarché au sein de l'équipe de maintenance. Remplissage et maintien des rayons, accueil et conseil client, manipulation des stocks, et formation à l'utilisation de machines spécialisées.",
-        "date": "Décembre 2024"
-      }
-    ],
-    "Hobbies": [
-      {
-        "id": "hob1",
-        "title": "Musique",
-        "text": "Guitare, Piano, Pad, MAO (connaissances avancées sur FL Studio et utilisation de nombreux plugins audio)."
-      }
-    ],
-    "Profil": [
-      {
-        "id": "prof1",
-        "title": "Profil",
-        "text": "Passionné par le développement web, j'ai acquis de l'expérience dans la restauration et le service client. Autodidacte et apprenant rapidement, je recherche un poste pour développer mes projets personnels tout en subvenant à mes besoins."
-      }
-    ]
+    "Studies": {
+      "blockTitle": "Education",
+      "items": [
+        {
+          "id": "study1",
+          "title": "Scientific Baccalaureate",
+          "subtitle": "Engineering Sciences",
+          "text": "Scientific Baccalaureate (specialization in Engineering Sciences).",
+          "date": "2012 - 2013"
+        },
+        {
+          "id": "study2",
+          "title": "Web Integration Diploma",
+          "subtitle": "OpenClassrooms",
+          "text": "Acquired skills through 12 professionally validated web development projects. Training focused on CSS/SCSS, HTML, JavaScript, Search Engine Optimization (SEO), and React/Redux.",
+          "date": "2023-2024"
+        },
+        {
+          "id": "study3",
+          "title": "Electric Equipment Operation Training",
+          "subtitle": "Auchan",
+          "text": "Training in operating pallet jacks and electric stackers as part of my maintenance and handling responsibilities at Auchan.",
+          "date": "October 2024 - January 2025"
+        }
+      ]
+    },
+    "Experiences": {
+      "blockTitle": "Professional Experience",
+      "items": [
+        {
+          "id": "exp1",
+          "title": "Head of Design",
+          "subtitle": "CreatLinx, London",
+          "text": "Co-founder of a blockchain/cryptocurrency startup. Involved in recruitment, design validation, development, and strategic planning. Demonstrated versatility, adaptability, and creativity.",
+          "date": "2017 - 2019"
+        },
+        {
+          "id": "exp2",
+          "title": "Various Roles in the Hospitality Industry",
+          "subtitle": "Huttopia, Columbus, Factory & Co, Strasbourg",
+          "text": "Served as a barista for 2 months, worked as a cook and waiter for 2 years, and performed as an event host and bartender at a campsite during the seasonal period.",
+          "date": "2019 - 2022"
+        },
+        {
+          "id": "exp3",
+          "title": "Versatile Employee",
+          "subtitle": "Auchan, Illkirch",
+          "text": "Worked as a multi-skilled employee in a supermarket within the maintenance team. Responsibilities included restocking and maintaining shelves, customer service, inventory management, and training on specialized machinery.",
+          "date": "October 2024 - January 2025"
+        }
+      ]
+    },
+    "Hobbies": {
+      "blockTitle": "About Me",
+      "items": [
+        {
+          "id": "hob1",
+          "title": "Music",
+          "text": "Guitar, Piano, Drum Pad, and Digital Audio Workstation (advanced skills in FL Studio and extensive experience with various audio plugins)."
+        }
+      ]
+    },
+    "Profil": {
+      "blockTitle": "Profile",
+      "items": [
+        {
+          "id": "prof1",
+          "title": "Profile",
+          "text": "Driven by a passion for web development, I have acquired valuable experience in the hospitality and customer service sectors. As a self-taught and quick learner, I am seeking a role that enables me to advance my personal projects while meeting my professional objectives."
+        }
+      ]
+    }
   },
   "DTL": {
-    "Contact": [
-      { "id": "cf1", "icon": "faLinkedinIn", "text": "Erwan Robin" },
-      { "id": "cf2", "icon": "faGithub", "text": "ErwanRob" },
-      { "id": "cf3", "icon": "faInstagram", "text": "erwan.rob" },
-      { "id": "cf4", "icon": "faEarthEurope", "text": "France" },
-      { "id": "cf5", "icon": "faHome", "text": "Strasbourg (67)" },
-      { "id": "cf6", "icon": "faPhone", "text": "06 10 50 28 37" },
-      { "id": "cf7", "icon": "faEnvelope", "text": "erobin.contact@gmail.com" }
-    ],
-    "Socials": [
-      { "id": "sc1", "icon": "faGithub", "text": "ErwanRob" },
-      { "id": "sc2", "icon": "faLinkedinIn", "text": "Erwan Robin" },
-      { "id": "sc3", "icon": "faInstagram", "text": "erwan.rob" }
-    ],
-    "Values": [
-      { "id": "val1", "text": "Autonomie" },
-      { "id": "val2", "text": "Communication" },
-      { "id": "val3", "text": "Esprit d'equipe" },
-      { "id": "val4", "text": "Persérvérence" }
-    ],
-    "Skills": [
-      { "id": "sk1", "text": "Service" },
-      { "id": "sk2", "text": "Relation client" },
-      { "id": "sk3", "text": "Manutention" }
-    ],
-    "Language": [
-      { "id": "lang1", "text": "Français" },
-      { "id": "lang2", "text": "Anglais (Avancé)" }
-    ]
+    "Contact": {
+      "blockTitle": "Contact",
+      "items": [
+        {
+          "id": "cf1",
+          "icon": "faLinkedinIn",
+          "text": "Erwan Robin"
+        },
+        {
+          "id": "cf2",
+          "icon": "faGithub",
+          "text": "ErwanRob"
+        },
+        {
+          "id": "cf3",
+          "icon": "faInstagram",
+          "text": "erwan.rob"
+        },
+        {
+          "id": "cf4",
+          "icon": "faEarthEurope",
+          "text": "France"
+        },
+        {
+          "id": "cf5",
+          "icon": "faHome",
+          "text": "Strasbourg (67)"
+        },
+        {
+          "id": "cf6",
+          "icon": "faPhone",
+          "text": "06 10 50 28 37"
+        },
+        {
+          "id": "cf7",
+          "icon": "faEnvelope",
+          "text": "erobin.contact@gmail.com"
+        }
+      ]
+    },
+    "Socials": {
+      "blockTitle": "Links",
+      "items": [
+        {
+          "id": "sc1",
+          "icon": "faGithub",
+          "text": "ErwanRob"
+        },
+        {
+          "id": "sc2",
+          "icon": "faLinkedinIn",
+          "text": "Erwan Robin"
+        },
+        {
+          "id": "sc3",
+          "icon": "faInstagram",
+          "text": "erwan.rob"
+        }
+      ]
+    },
+    "Values": {
+      "blockTitle": "Core Values",
+      "items": [
+        {
+          "id": "val1",
+          "text": "Autonomy"
+        },
+        {
+          "id": "val2",
+          "text": "Communication"
+        },
+        {
+          "id": "val3",
+          "text": "Teamwork"
+        },
+        {
+          "id": "val4",
+          "text": "Perseverance"
+        }
+      ]
+    },
+    "Skills": {
+      "blockTitle": "Skills",
+      "items": [
+        {
+          "id": "sk1",
+          "text": "Service"
+        },
+        {
+          "id": "sk2",
+          "text": "Customer Relations"
+        },
+        {
+          "id": "sk3",
+          "text": "Manual Handling"
+        }
+      ]
+    },
+    "Language": {
+      "blockTitle": "Languages",
+      "items": [
+        {
+          "id": "lang1",
+          "text": "French"
+        },
+        {
+          "id": "lang2",
+          "text": "English (Advanced)"
+        }
+      ]
+    }
   }
 }

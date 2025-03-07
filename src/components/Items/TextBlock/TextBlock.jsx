@@ -66,6 +66,7 @@ const TextBlock = ({ blockTitle, source, center = false, layoutId }) => {
 };
 
 TextBlock.propTypes = {
+  /* blockTitle: PropTypes.bool, */
   blockTitle: PropTypes.string,
   source: PropTypes.object.isRequired,
   center: PropTypes.bool,

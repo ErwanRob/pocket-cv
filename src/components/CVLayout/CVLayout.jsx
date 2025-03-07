@@ -16,23 +16,23 @@ const CVLayout = ({ layoutType, data }) => {
         left: () => (
           <>
             <TextBlock
-              source={data.TBL.Profil[0]}
+              source={data.TBL.Profil.items[0]}
               center={true}
               layoutId={layoutId}
             />
             <Portrait layoutId={layoutId} />
             <ItemsList
-              title="Valeurs"
+              blockTitle={true}
               source={data.DTL.Values}
               layoutId={layoutId}
             />
             <ItemsList
-              title="Competences"
+              blockTitle={true}
               source={data.DTL.Skills}
               layoutId={layoutId}
             />
             <ItemsList
-              title="Langue"
+              blockTitle={true}
               source={data.DTL.Language}
               layoutId={layoutId}
             />
@@ -41,21 +41,25 @@ const CVLayout = ({ layoutType, data }) => {
         right: () => (
           <>
             <TextBlock
-              blockTitle="Experience"
-              source={data.TBL.Experiences[2]}
+              blockTitle={data.TBL.Experiences.blockTitle}
+              source={data.TBL.Experiences.items[2]}
               layoutId={layoutId}
             />
-            <TextBlock source={data.TBL.Experiences[1]} layoutId={layoutId} />
-            <TextBlock source={data.TBL.Experiences[0]} layoutId={layoutId} />
             <TextBlock
-              blockTitle="Formation"
-              source={data.TBL.Studies[1]}
+              source={data.TBL.Experiences.items[1]}
               layoutId={layoutId}
             />
-            <TextBlock source={data.TBL.Studies[0]} layoutId={layoutId} />
+            {/*   <TextBlock source={data.TBL.Experiences[0]} layoutId={layoutId} /> */}
             <TextBlock
-              blockTitle="A propos de moi"
-              source={data.TBL.Hobbies[0]}
+              blockTitle={data.TBL.Studies.blockTitle}
+              source={data.TBL.Studies.items[2]}
+              layoutId={layoutId}
+            />
+            <TextBlock source={data.TBL.Studies.items[1]} layoutId={layoutId} />
+            <TextBlock source={data.TBL.Studies.items[0]} layoutId={layoutId} />
+            <TextBlock
+              blockTitle={data.TBL.Hobbies.blockTitle}
+              source={data.TBL.Hobbies.items[0]}
               layoutId={layoutId}
             />
           </>
@@ -71,22 +75,22 @@ const CVLayout = ({ layoutType, data }) => {
           <>
             <Portrait layoutId={layoutId} />
             <ItemsList
-              title="Valeurs"
+              blockTitle={true}
               source={data.DTL.Values}
               layoutId={layoutId}
             />
             <ItemsList
-              title="Competences"
+              blockTitle={true}
               source={data.DTL.Skills}
               layoutId={layoutId}
             />
             <ItemsList
-              title="Langue"
+              blockTitle={true}
               source={data.DTL.Language}
               layoutId={layoutId}
             />
             <ItemsList
-              title="Contact"
+              blockTitle={true}
               source={data.DTL.Contact}
               hasIcons={true}
               layoutId={layoutId}
@@ -96,26 +100,32 @@ const CVLayout = ({ layoutType, data }) => {
         right: () => (
           <>
             <TextBlock
-              source={data.TBL.Profil[0]}
+              source={data.TBL.Profil.items[0]}
               center={false}
               layoutId={layoutId}
             />
             <TextBlock
-              blockTitle="Experience"
-              source={data.TBL.Experiences[2]}
+              blockTitle={data.TBL.Experiences.blockTitle}
+              source={data.TBL.Experiences.items[2]}
               layoutId={layoutId}
             />
-            <TextBlock source={data.TBL.Experiences[1]} layoutId={layoutId} />
-            <TextBlock source={data.TBL.Experiences[0]} layoutId={layoutId} />
             <TextBlock
-              blockTitle="Formation"
-              source={data.TBL.Studies[1]}
+              source={data.TBL.Experiences.items[1]}
               layoutId={layoutId}
             />
-            <TextBlock source={data.TBL.Studies[0]} layoutId={layoutId} />
             <TextBlock
-              blockTitle="A propos de moi"
-              source={data.TBL.Hobbies[0]}
+              source={data.TBL.Experiences.items[0]}
+              layoutId={layoutId}
+            />
+            <TextBlock
+              blockTitle={data.TBL.Studies.blockTitle}
+              source={data.TBL.Studies.items[1]}
+              layoutId={layoutId}
+            />
+            <TextBlock source={data.TBL.Studies.items[0]} layoutId={layoutId} />
+            <TextBlock
+              blockTitle={data.TBL.Hobbies.blockTitle}
+              source={data.TBL.Hobbies.items[0]}
               layoutId={layoutId}
             />
           </>
