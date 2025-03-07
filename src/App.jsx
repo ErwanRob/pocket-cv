@@ -54,6 +54,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Navigate to="/cv/fr/barrista" />} />
             <Route path="/cv/:language/:cvType" element={<CV />} />
+            <Route path="/*" element={<Navigate to="/" />} />
           </Routes>
         </div>
       </div>
