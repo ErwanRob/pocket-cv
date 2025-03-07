@@ -4,7 +4,7 @@
 .cv {
   @include abs.flxAllCtrBox;
   @include abs.fullSize;
-  background-color: abs.$light-grey;
+  /*   background-color: abs.$light-grey; */
   color: black;
 
   &__layoutButton {

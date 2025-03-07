@@ -1,55 +1,88 @@
 @use "../../styles/abstracts/" as abs;
 
 .header {
-  position: relative;
+  position: fixed;
   z-index: 999;
-  background: abs.$blue;
+  /* background: abs.$dark-grey; */
   width: 100%;
   height: auto;
   @include abs.flxAllCtrBox;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 1rem;
   transform-origin: top;
 
+  &__disclaimer {
+    position: absolute;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    left: 0.5rem;
+    top: 1.25rem;
+    @include abs.flxAllCtrBox;
+    list-style: none;
+    width: auto;
+    /* height: 100%; */
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    /* margin: 0.5rem 0; */
+    font-size: 1.125rem;
+    font-weight: 200;
+    color: abs.$light-grey;
+    /*   background-color: abs.$darker-grey; */
+  }
   &__nav {
     box-sizing: border-box;
+    overflow: hidden;
     @include abs.flxAllCtrBox;
     max-width: 1200px;
-    height: 100%;
-    gap: 1rem;
-    padding: 0.5rem;
+    height: 4rem;
+    /* gap: 1rem; */
+    /*   padding: 0rem 1rem; */
+    border-radius: 4px;
+    margin: auto;
+    background-color: abs.$darker-grey;
+    filter: drop-shadow(0px 0px 10px black);
 
     &__link {
-      border-radius: 4px;
       @include abs.flxAllCtrBox;
       list-style: none;
       width: auto;
       height: 100%;
       text-decoration: none;
-      padding: 0.5rem;
+      padding: 0.5rem 1.5rem; /*  */
       font-size: 1rem;
       font-weight: 500;
+      /*   border-radius: 4px; */
       color: abs.$medium-grey-rgba;
+      transition: all 0.15s ease-in-out;
       &:hover {
-        background-color: abs.$dark-grey;
-        scale: 0.975;
+        background-color: abs.$grey;
+        /*   scale: 0.975; */
+        /*   color: abs.$gold; */
+      }
+      &--active {
+        background-color: abs.$grey;
         color: abs.$gold;
       }
     }
   }
   &__downloadButton {
+    position: absolute;
     border-radius: 4px;
-    right: 0;
+    right: 2rem;
+    top: 1.25rem;
     @include abs.flxAllCtrBox;
     list-style: none;
     width: auto;
-    height: 100%;
+    /* height: 100%; */
     text-decoration: none;
-    padding: 1rem 0.5rem;
-    margin: 0.5rem 0;
-    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    /* margin: 0.5rem 0; */
+    font-size: 1.25rem;
     font-weight: 500;
     color: abs.$medium-grey-rgba;
+    background-color: abs.$darker-grey;
+    filter: drop-shadow(0px 0px 10px black);
+    transition: all 0.1s ease-in-out;
     &:hover {
       background-color: rgba(34, 119, 23, 0.749);
       scale: 0.975;

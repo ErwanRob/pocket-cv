@@ -1,23 +1,54 @@
 import PropTypes from "prop-types";
 import styles from "./Header.module.scss";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = ({ downloadPDF }) => {
   return (
     <div className={styles.header}>
+      <p className={styles["header__disclaimer"]}>
+        🚧❗ Pocket CV - is a simple project for my own use/needs ❗🚧
+      </p>
       <nav className={styles["header__nav"]}>
-        <Link className={styles["header__nav__link"]} to="/cv/fr/barrista">
+        <NavLink
+          to="/cv/fr/barrista"
+          className={({ isActive }) =>
+            isActive
+              ? `${styles["header__nav__link"]} ${styles["header__nav__link--active"]}`
+              : styles["header__nav__link"]
+          }
+        >
           Barrista (FR)
-        </Link>
-        <Link className={styles["header__nav__link"]} to="/cv/en/barrista">
+        </NavLink>
+        <NavLink
+          to="/cv/en/barrista"
+          className={({ isActive }) =>
+            isActive
+              ? `${styles["header__nav__link"]} ${styles["header__nav__link--active"]}`
+              : styles["header__nav__link"]
+          }
+        >
           Barrista (EN)
-        </Link>
-        <Link className={styles["header__nav__link"]} to="/cv/fr/frontEnd">
+        </NavLink>
+        <NavLink
+          to="/cv/fr/frontEnd"
+          className={({ isActive }) =>
+            isActive
+              ? `${styles["header__nav__link"]} ${styles["header__nav__link--active"]}`
+              : styles["header__nav__link"]
+          }
+        >
           Front-End (FR)
-        </Link>
-        <Link className={styles["header__nav__link"]} to="/cv/en/frontEnd">
+        </NavLink>
+        <NavLink
+          to="/cv/en/frontEnd"
+          className={({ isActive }) =>
+            isActive
+              ? `${styles["header__nav__link"]} ${styles["header__nav__link--active"]}`
+              : styles["header__nav__link"]
+          }
+        >
           Front-End (EN)
-        </Link>
+        </NavLink>
       </nav>
       <button
         className={styles["header__downloadButton"]}

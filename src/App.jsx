@@ -23,8 +23,8 @@ function App() {
         html2canvas: {
           scale: 4, // Increased scale for better quality
           useCORS: true, // Enable cross-origin resource sharing
-          logging: false, // Disable logging
-          dpi: 1000, // Higher DPI for better print quality
+          /*   logging: false, */ // Disable logging
+          dpi: 192, // Higher DPI for better print quality
           letterRendering: true, // Improve text rendering
           allowTaint: true, // Allow rendering of cross-origin images
         },

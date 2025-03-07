@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from "motion/react";
 import styles from "./CVLayout.module.scss";
 import PropTypes from "prop-types";
 import Portrait from "../Items/Portrait/Portrait.jsx";
@@ -127,28 +128,37 @@ const CVLayout = ({ layoutType, data }) => {
   const currentLayout = layouts[layoutType] || layouts.layout1;
 
   return (
-    <div className={currentLayout.gridClass}>
-      {currentLayout.section.top && (
-        <div className={styles[`layoutGrid${layoutId}__topSection`]}>
-          {currentLayout.section.top()}
-        </div>
-      )}
-      {currentLayout.section.left && (
-        <div className={styles[`layoutGrid${layoutId}__leftSection`]}>
-          {currentLayout.section.left()}
-        </div>
-      )}
-      {currentLayout.section.right && (
-        <div className={styles[`layoutGrid${layoutId}__rightSection`]}>
-          {currentLayout.section.right()}
-        </div>
-      )}
-      {currentLayout.section.bottom && (
-        <div className={styles[`layoutGrid${layoutId}__bottomSection`]}>
-          {currentLayout.section.bottom()}
-        </div>
-      )}
-    </div>
+    <AnimatePresence mode="wait">
+      <motion.div
+        className={currentLayout.gridClass}
+        initial={{ /* x: "100%", */ opacity: 0, scale: 0.95 }}
+        animate={{ /* x: 0, */ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.1, ease: "easeInOut" }}
+        exit={{ /*  x: "-100% ", */ opacity: 0, scale: 0.95 }}
+        key={layoutType}
+      >
+        {currentLayout.section.top && (
+          <div className={styles[`layoutGrid${layoutId}__topSection`]}>
+            {currentLayout.section.top()}
+          </div>
+        )}
+        {currentLayout.section.left && (
+          <div className={styles[`layoutGrid${layoutId}__leftSection`]}>
+            {currentLayout.section.left()}
+          </div>
+        )}
+        {currentLayout.section.right && (
+          <div className={styles[`layoutGrid${layoutId}__rightSection`]}>
+            {currentLayout.section.right()}
+          </div>
+        )}
+        {currentLayout.section.bottom && (
+          <div className={styles[`layoutGrid${layoutId}__bottomSection`]}>
+            {currentLayout.section.bottom()}
+          </div>
+        )}
+      </motion.div>
+    </AnimatePresence>
   );
 };
 

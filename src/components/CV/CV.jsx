@@ -33,7 +33,13 @@ const CV = () => {
   }
 
   return (
-    <div className={styles.cv}>
+    <div
+      className={styles.cv}
+      initial={{ y: 100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 1 }}
+      exit={{ y: -100 }}
+    >
       <CVLayout layoutType={layoutType} data={data} />
       <button className={styles["cv__layoutButton"]} onClick={handleLayout}>
         Change layout :
