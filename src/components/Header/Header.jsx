@@ -3,6 +3,8 @@ import styles from "./Header.module.scss";
 import { NavLink } from "react-router-dom";
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
+import frFlag from "../../assets/img/icon/frFlag.png";
+import ukFlag from "../../assets/img/icon/ukFlag.png";
 
 const Header = ({ downloadPDF }) => {
   const [disclaimerOpen, setDisclaimerOpen] = useState("closed");
@@ -66,7 +68,8 @@ const Header = ({ downloadPDF }) => {
               : styles["header__nav__link"]
           }
         >
-          Barrista (FR)
+          <p>Barrista</p>
+          <img src={frFlag} alt="French Flag" />
         </NavLink>
         <NavLink
           to="/cv/en/barrista"
@@ -76,7 +79,8 @@ const Header = ({ downloadPDF }) => {
               : styles["header__nav__link"]
           }
         >
-          Barrista (EN)
+          <p>Barrista</p>
+          <img src={ukFlag} alt="UK Flag" />
         </NavLink>
         <NavLink
           to="/cv/fr/frontEnd"
@@ -86,7 +90,8 @@ const Header = ({ downloadPDF }) => {
               : styles["header__nav__link"]
           }
         >
-          Front-End (FR)
+          <p>Front-End</p>
+          <img src={frFlag} alt="French Flag" />
         </NavLink>
         <NavLink
           to="/cv/en/frontEnd"
@@ -96,7 +101,8 @@ const Header = ({ downloadPDF }) => {
               : styles["header__nav__link"]
           }
         >
-          Front-End (EN)
+          <p>Front-End</p>
+          <img src={ukFlag} alt="UK Flag" />
         </NavLink>
       </nav>
       <button

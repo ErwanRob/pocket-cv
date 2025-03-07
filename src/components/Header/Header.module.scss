@@ -22,8 +22,6 @@
     top: 1.25rem;
     gap: 0.5rem;
     list-style: none;
-    /*     width: auto; */
-    /* height: 100%; */
     text-decoration: none;
     padding: 1rem 1.5rem;
     /* margin: 0.5rem 0; */
@@ -50,7 +48,7 @@
     overflow: hidden;
     @include abs.flxAllCtrBox;
     max-width: 1200px;
-    height: 4rem;
+    height: 4.5rem;
     /* gap: 1rem; */
     /*   padding: 0rem 1rem; */
     border-radius: 4px;
@@ -60,20 +58,18 @@
 
     &__link {
       @include abs.flxAllCtrBox;
+      flex-direction: column;
       list-style: none;
       width: auto;
       height: 100%;
       text-decoration: none;
-      padding: 0.5rem 1.5rem; /*  */
+      padding: 0.5rem 2.5rem;
       font-size: 1rem;
       font-weight: 500;
-      /*   border-radius: 4px; */
       color: abs.$medium-grey-rgba;
       transition: all 0.15s ease-in-out;
       &:hover {
         background-color: abs.$grey;
-        /*   scale: 0.975; */
-        /*   color: abs.$gold; */
       }
       &--active {
         background-color: abs.$grey;
