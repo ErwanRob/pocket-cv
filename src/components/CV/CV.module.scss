@@ -2,12 +2,22 @@
 @use "../../styles/base" as base;
 
 .cv {
+  /*   background-color: abs.$light-grey; */
   @include abs.flxAllCtrBox;
   @include abs.fullSize;
-  /*   background-color: abs.$light-grey; */
   color: black;
+}
 
-  &__layoutButton {
+.loading {
+  @include abs.fullSize;
+  @include abs.flxAllCtrBox;
+  background-color: abs.$light-grey;
+  color: black;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+/* &__layoutButton {
     z-index: 100;
     position: absolute;
     @include abs.flxAllCtrBox;
@@ -34,61 +44,4 @@
     @media print {
       display: none;
     }
-  }
-
-  /*   &__layoutGrid {
-    box-sizing: border-box;
-    @include abs.fullSize;
-    display: grid;
-    gap: 0rem;
-    grid-template-columns: 33% auto;
-    grid-template-rows: 25% auto;
-    grid-template-areas:
-      "topSection topSection"
-      "leftSection rightSection";
-
-    &__topSection {
-      grid-area: topSection;
-      @include abs.flxAllCtrBox;
-      @include abs.fullSize;
-      width: 100%;
-      height: 100%;
-      background-color: abs.$blue;
-    }
-
-    &__rightSection,
-    &__leftSection {
-      @include abs.flxAllCtrBox;
-      @include abs.fullSize;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-    }
-
-    &__leftSection {
-      padding: 1rem 0 0 0;
-      grid-area: leftSection;
-      border-right: 1px solid abs.$blue;
-
-      background: abs.$grad-leftSection;
-    }
-
-    &__rightSection {
-      grid-area: rightSection;
-      background: abs.$grad-leftSection2;
-    }
-
-      &__bottomSection {
-      grid-area: bottomSection;
-    }
   } */
-}
-
-.loading {
-  @include abs.fullSize;
-  @include abs.flxAllCtrBox;
-  background-color: abs.$light-grey;
-  color: black;
-  font-size: 5rem;
-  font-weight: 500;
-}

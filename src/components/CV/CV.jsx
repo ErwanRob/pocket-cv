@@ -8,16 +8,9 @@ const CV = () => {
   const [data, setData] = useState(null);
   const [layoutType, setLayoutType] = useState("layout1");
 
-  //Button for it is disabled for print purposes
-  const handleLayout = () => {
-    setLayoutType((prev) => (prev === "layout1" ? "layout2" : "layout1"));
-  };
-
   useEffect(() => {
     const url = `/data/${language}/${cvType}.json`;
-    console.log("Fetching data from:", url);
     fetch(url)
-      /*   fetch(`/data/${language}/${cvType}.json`) */
       .then((response) => response.json())
       .then((data) => {
         setData(data);
@@ -25,7 +18,7 @@ const CV = () => {
       .catch((error) => console.error("Error fetching data:", error));
 
     //set layout type based on cvType if needed later on (barrista vs frontEnd)
-    setLayoutType(cvType === "barrista" ? "layout1" : "layout2");
+    setLayoutType(cvType === "frontEnd" ? "layout1" : "layout2");
   }, [language, cvType]);
 
   if (!data) {
@@ -41,14 +34,23 @@ const CV = () => {
       exit={{ y: -100 }}
     >
       <CVLayout layoutType={layoutType} data={data} />
-      <button className={styles["cv__layoutButton"]} onClick={handleLayout}>
-        Change layout :
-        <span className={styles["cv__layoutButton__display"]}>
-          {layoutType}
-        </span>
-      </button>
     </div>
   );
 };
 
 export default CV;
+
+{
+  /* <button className={styles["cv__layoutButton"]} onClick={handleLayout}>
+        Change layout :
+        <span className={styles["cv__layoutButton__display"]}>
+          {layoutType}
+        </span>
+      </button> 
+      
+        //Button is disabled for print purposes (not working, doesnt disapear on print)
+  const handleLayout = () => {
+    setLayoutType((prev) => (prev === "layout1" ? "layout2" : "layout1"));
+  };
+*/
+}

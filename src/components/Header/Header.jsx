@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import styles from "./Header.module.scss";
 import { NavLink } from "react-router-dom";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion as Motion } from "motion/react";
 import { useState } from "react";
 import frFlag from "../../assets/img/icon/frFlag.png";
 import ukFlag from "../../assets/img/icon/ukFlag.png";
@@ -36,7 +36,7 @@ const Header = ({ downloadPDF }) => {
   return (
     <div className={styles.header}>
       <AnimatePresence mode="popLayout">
-        <motion.div
+        <Motion.div
           className={styles["header__disclaimer"]}
           initial="closed"
           animate={disclaimerOpen}
@@ -47,7 +47,7 @@ const Header = ({ downloadPDF }) => {
           {disclaimerOpen === "closed" && (
             <p className={styles["header__disclaimer__icon"]}>➕ ❗🚧</p>
           )}
-          <motion.p
+          <Motion.p
             className={styles["header__disclaimer__txt"]}
             initial="closed"
             animate={disclaimerOpen}
@@ -56,32 +56,10 @@ const Header = ({ downloadPDF }) => {
           >
             ➖ Pocket CV - is a personal project created to meet my specific
             needs. And yes, i had some fun along the way. 🤓
-          </motion.p>
-        </motion.div>
+          </Motion.p>
+        </Motion.div>
       </AnimatePresence>
       <nav className={styles["header__nav"]}>
-        <NavLink
-          to="/cv/fr/barrista"
-          className={({ isActive }) =>
-            isActive
-              ? `${styles["header__nav__link"]} ${styles["header__nav__link--active"]}`
-              : styles["header__nav__link"]
-          }
-        >
-          <p>Barrista</p>
-          <img src={frFlag} alt="French Flag" />
-        </NavLink>
-        <NavLink
-          to="/cv/en/barrista"
-          className={({ isActive }) =>
-            isActive
-              ? `${styles["header__nav__link"]} ${styles["header__nav__link--active"]}`
-              : styles["header__nav__link"]
-          }
-        >
-          <p>Barrista</p>
-          <img src={ukFlag} alt="UK Flag" />
-        </NavLink>
         <NavLink
           to="/cv/fr/frontEnd"
           className={({ isActive }) =>
@@ -102,6 +80,28 @@ const Header = ({ downloadPDF }) => {
           }
         >
           <p>Front-End</p>
+          <img src={ukFlag} alt="UK Flag" />
+        </NavLink>
+        <NavLink
+          to="/cv/fr/barrista"
+          className={({ isActive }) =>
+            isActive
+              ? `${styles["header__nav__link"]} ${styles["header__nav__link--active"]}`
+              : styles["header__nav__link"]
+          }
+        >
+          <p>Barrista</p>
+          <img src={frFlag} alt="French Flag" />
+        </NavLink>
+        <NavLink
+          to="/cv/en/barrista"
+          className={({ isActive }) =>
+            isActive
+              ? `${styles["header__nav__link"]} ${styles["header__nav__link--active"]}`
+              : styles["header__nav__link"]
+          }
+        >
+          <p>Barrista</p>
           <img src={ukFlag} alt="UK Flag" />
         </NavLink>
       </nav>

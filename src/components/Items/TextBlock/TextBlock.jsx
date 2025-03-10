@@ -31,29 +31,27 @@ const TextBlock = ({ blockTitle, source, center = false, layoutId }) => {
       >
         {source.title}
       </div>
-      {source.date && source.subtitle && (
-        <div className={styles[`textBlock${layoutId}__subtitleContainer`]}>
-          <h4
-            className={
-              styles[`textBlock${layoutId}__subtitleContainer__subtitle`]
-            }
-          >
-            {source.subtitle}
-          </h4>
 
+      <div className={styles[`textBlock${layoutId}__subtitleContainer`]}>
+        <h4
+          className={
+            styles[`textBlock${layoutId}__subtitleContainer__subtitle`]
+          }
+        >
+          {source.subtitle}
+        </h4>
+        {source.date && source.subtitle && (
           <div
             className={
               styles[`textBlock${layoutId}__subtitleContainer__separator`]
             }
           />
+        )}
+        <p className={styles[`textBlock${layoutId}__subtitleContainer__date`]}>
+          {source.date}
+        </p>
+      </div>
 
-          <p
-            className={styles[`textBlock${layoutId}__subtitleContainer__date`]}
-          >
-            {source.date}
-          </p>
-        </div>
-      )}
       <p
         className={
           styles[`textBlock${layoutId}__text${center ? "-alignCenter" : ""}`]

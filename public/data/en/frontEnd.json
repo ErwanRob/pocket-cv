@@ -74,6 +74,27 @@
     }
   },
   "DTL": {
+    "SkillsHeadline": {
+      "blockTitle": "Compétences Principales",
+      "items": [
+        {
+          "id": "sh1",
+          "text": "Développement de la partie Front-end d'un site web."
+        },
+        {
+          "id": "sh2",
+          "text": "Amelioration SEO (Search Engine Optimisation)"
+        },
+        {
+          "id": "sh3",
+          "text": "Experience utilisateur / UX design"
+        },
+        {
+          "id": "sh4",
+          "text": "Maintenance et tests d'un site web"
+        }
+      ]
+    },
     "Contact": {
       "blockTitle": "Contact",
       "items": [

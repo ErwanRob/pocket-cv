@@ -52,7 +52,7 @@ function App() {
       <div className="mainContainer">
         <div className="a4SizedContainer" ref={a4ContainerRef}>
           <Routes>
-            <Route path="/" element={<Navigate to="/cv/fr/barrista" />} />
+            <Route path="/" element={<Navigate to="/cv/fr/frontEnd" />} />
             <Route path="/cv/:language/:cvType" element={<CV />} />
             <Route path="/*" element={<Navigate to="/" />} />
           </Routes>

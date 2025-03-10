@@ -16,6 +16,7 @@ const ItemsList = ({
   source,
   hasIcons = false,
   layoutId,
+  color,
 }) => {
   const iconMap = {
     faEnvelope,
@@ -41,7 +42,10 @@ const ItemsList = ({
     itemsListVariant.itemsListVariant1;
 
   return (
-    <div className={currentItem.itemsListClass}>
+    <div
+      className={currentItem.itemsListClass}
+      style={color ? { "--item-txt-color": color } : {}}
+    >
       {blockTitle && (
         <h3 className={styles[`itemsList${layoutId}__title`]}>
           {source.blockTitle}
@@ -96,6 +100,7 @@ ItemsList.propTypes = {
   blockTitle: PropTypes.bool, // CAREFULL, there is 2 blockTitle
   hasIcons: PropTypes.bool,
   layoutId: PropTypes.string,
+  color: PropTypes.string,
 };
 
 export default ItemsList;

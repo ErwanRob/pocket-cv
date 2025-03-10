@@ -31,7 +31,7 @@
       "items": [
         {
           "id": "exp1",
-          "title": "Head of Design",
+          "title": "Responsable Design",
           "subtitle": "CreatLinx, Londres",
           "text": "Co-fondateur d'une start-up blockchain/cryptomonnaie. Recrutement, validation des designs, développement, et participation à la stratégie. Soft Skills : polyvalence, adaptabilité, créativité.",
           "date": "2017 - 2019"
@@ -63,17 +63,39 @@
       ]
     },
     "Profil": {
-      "blockTitle": "Profile",
+      "blockTitle": "ERWAN ROBIN",
       "items": [
         {
           "id": "prof1",
           "title": "Profil",
-          "text": "Passionné par le développement web, j'ai acquis de l'expérience dans la restauration et le service client. Autodidacte et apprenant rapidement, je recherche un poste pour développer mes projets personnels tout en subvenant à mes besoins."
+          "subtitle": "DÉVELOPPEUR INTÉGRATEUR WEB",
+          "text": "Développeur Web Front-End dynamique et diplômé, ma solide maîtrise des langages clés et ma passion pour l'expérience utilisateur font de moi un professionnel prêt à relever des défis stimulants. En quête d'opportunités au sein d'une équipe innovante pour mettre en oeuvre mes compétences avec une approche créative et axée sur l'utilisateur. Je recherche actuellement un poste en France, ou en Suisse"
         }
       ]
     }
   },
   "DTL": {
+    "SkillsHeadline": {
+      "blockTitle": "Compétences Principales",
+      "items": [
+        {
+          "id": "sh1",
+          "text": "Développement de la partie Front-end d'un site web."
+        },
+        {
+          "id": "sh2",
+          "text": "Amelioration SEO (Search Engine Optimisation)"
+        },
+        {
+          "id": "sh3",
+          "text": "Experience utilisateur / UX design"
+        },
+        {
+          "id": "sh4",
+          "text": "Maintenance et tests d'un site web"
+        }
+      ]
+    },
     "Contact": {
       "blockTitle": "Contact",
       "items": [
