@@ -7,58 +7,71 @@
           "id": "study1",
           "title": "Scientific Baccalaureate",
           "subtitle": "Engineering Sciences",
-          "text": "Scientific Baccalaureate (specialization in Engineering Sciences).",
           "date": "2012 - 2013"
         },
         {
           "id": "study2",
-          "title": "Web Integration Diploma",
+          "title": "Web Integrator Diploma",
           "subtitle": "OpenClassrooms",
-          "text": "Acquired skills through 12 professionally validated web development projects. Training focused on CSS/SCSS, HTML, JavaScript, Search Engine Optimization (SEO), and React/Redux.",
+          "text": "Acquired skills through 12 validated web development projects. Training focused on CSS/SCSS, HTML, JavaScript, SEO, and React/Redux.",
           "date": "2023-2024"
         },
         {
           "id": "study3",
-          "title": "Electric Equipment Operation Training",
+          "title": "Electric Equipment Operation",
           "subtitle": "Auchan",
-          "text": "Training in operating pallet jacks and electric stackers as part of my maintenance and handling responsibilities at Auchan.",
-          "date": "October 2024 - January 2025"
+          "text": "Training in operating electric pallet trucks and stackers.",
+          "date": "2024 - 2025"
         }
       ]
     },
     "Experiences": {
-      "blockTitle": "Professional Experience",
+      "blockTitle": "Experience",
       "items": [
         {
           "id": "exp1",
           "title": "Head of Design",
           "subtitle": "CreatLinx, London",
-          "text": "Co-founder of a blockchain/cryptocurrency startup. Involved in recruitment, design validation, development, and strategic planning. Demonstrated versatility, adaptability, and creativity.",
+          "text": "Co-founder of a blockchain/cryptocurrency startup. Responsible for recruitment, design validation, development, and strategic planning. Soft skills: versatility, adaptability, creativity.",
           "date": "2017 - 2019"
         },
         {
           "id": "exp2",
-          "title": "Various Roles in the Hospitality Industry",
-          "subtitle": "Huttopia, Columbus, Factory & Co, Strasbourg",
-          "text": "Served as a barista for 2 months, worked as a cook and waiter for 2 years, and performed as an event host and bartender at a campsite during the seasonal period.",
-          "date": "2019 - 2022"
+          "title": "Entertainer & Bartender",
+          "subtitle": "Huttopia, Rillé",
+          "text": "Entertainer for children and families as well as bartender at a campsite during the summer season.",
+          "date": "2019"
         },
         {
           "id": "exp3",
-          "title": "Versatile Employee",
+          "title": "Barista",
+          "subtitle": "Columbus, Strasbourg",
+          "text": "Prepared and served hot and cold beverages along with pastries, managed cash transactions, and maintained cleanliness of the premises.",
+          "date": "2019"
+        },
+        {
+          "id": "exp4",
+          "title": "Cook & Waiter",
+          "subtitle": "Factory & Co, Strasbourg",
+          "text": "Independently or collaboratively prepared dishes. Demonstrated proficiency in assembling and cooking burgers, bagels, and salads. Managed order taking, table service, cash handling, and maintenance of the premises.",
+          "date": "2019 - 2022"
+        },
+        {
+          "id": "exp5",
+          "title": "Retail Associate",
           "subtitle": "Auchan, Illkirch",
-          "text": "Worked as a multi-skilled employee in a supermarket within the maintenance team. Responsibilities included restocking and maintaining shelves, customer service, inventory management, and training on specialized machinery.",
-          "date": "October 2024 - January 2025"
+          "text": "Versatile employee in a supermarket's maintenance team. Responsible for restocking and maintaining shelves, assisting customers, and handling stock. Received training on specialized equipment.",
+          "date": "2024 - 2025"
         }
       ]
     },
     "Hobbies": {
-      "blockTitle": "About Me",
+      "blockTitle": "Interests",
       "items": [
         {
           "id": "hob1",
           "title": "Music",
-          "text": "Guitar, Piano, Drum Pad, and Digital Audio Workstation (advanced skills in FL Studio and extensive experience with various audio plugins)."
+          "text": "Guitar, piano, pad, Digital Audio Workstation (advanced proficiency in FL Studio and various audio plugins)."
         }
       ]
     },
@@ -68,7 +81,7 @@
         {
           "id": "prof1",
           "title": "Profile",
-          "text": "Driven by a passion for web development, I have acquired valuable experience in the hospitality and customer service sectors. As a self-taught and quick learner, I am seeking a role that enables me to advance my personal projects while meeting my professional objectives."
+          "text": "With a solid background in restaurant and customer service, I have worked as a barista and in various service roles. I have developed versatility, efficiency, and a strong sense of customer satisfaction. I aim to leverage my interpersonal skills and contribute to a friendly and dynamic environment. Simultaneously, I am engaged in freelance web development, an activity that fuels my curiosity and nurtures my creativity."
         }
       ]
     }
@@ -135,7 +148,7 @@
       ]
     },
     "Values": {
-      "blockTitle": "Core Values",
+      "blockTitle": "Soft Skills",
       "items": [
         {
           "id": "val1",
@@ -147,7 +160,7 @@
         },
         {
           "id": "val3",
-          "text": "Teamwork"
+          "text": "Team Spirit"
         },
         {
           "id": "val4",
@@ -168,7 +181,11 @@
         },
         {
           "id": "sk3",
-          "text": "Manual Handling"
+          "text": "Hygiene Standards"
+        },
+        {
+          "id": "sk4",
+          "text": "Material Handling"
         }
       ]
     },
@@ -181,7 +198,7 @@
         },
         {
           "id": "lang2",
-          "text": "English (Advanced)"
+          "text": "English (advanced)"
         }
       ]
     }

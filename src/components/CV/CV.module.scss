@@ -2,19 +2,30 @@
 @use "../../styles/base" as base;
 
 .cv {
-  /*   background-color: abs.$light-grey; */
   @include abs.flxAllCtrBox;
   @include abs.fullSize;
   color: black;
 }
 
 .loading {
-  @include abs.fullSize;
+  width: 100%;
+  height: 80%;
   @include abs.flxAllCtrBox;
-  background-color: abs.$light-grey;
-  color: black;
-  font-size: 5rem;
+  font-size: 2rem;
   font-weight: 500;
+  animation: loading 250ms infinite ease-in-out;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* &__layoutButton {

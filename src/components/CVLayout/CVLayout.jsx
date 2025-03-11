@@ -109,6 +109,14 @@ const CVLayout = ({ layoutType, data }) => {
           <>
             <TextBlock
               blockTitle={data.TBL.Experiences.blockTitle}
+              source={data.TBL.Experiences.items[4]}
+              layoutId={layoutId}
+            />
+            <TextBlock
+              source={data.TBL.Experiences.items[3]}
+              layoutId={layoutId}
+            />
+            <TextBlock
               source={data.TBL.Experiences.items[2]}
               layoutId={layoutId}
             />

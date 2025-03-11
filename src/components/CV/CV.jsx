@@ -22,7 +22,7 @@ const CV = () => {
   }, [language, cvType]);
 
   if (!data) {
-    return <div className="loading">Loading...</div>;
+    return <div className={styles["loading"]}>Loading data...</div>;
   }
 
   return (

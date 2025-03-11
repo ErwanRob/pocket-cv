@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./HeadBand.module.scss";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -9,12 +8,12 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 const HeadBand = () => {
   return (
     <div className={styles.headBand}>
-      <div className={styles["headBand__initials"]}>E | R</div>
+      {/*   <div className={styles["headBand__initials"]}>E | R</div> */}
       <h1 className={styles["headBand__name"]}>ERWAN ROBIN</h1>
       <div className={styles["headBand__job"]}>
         <div className={styles["headBand__job__lineLeft"]} />
         <h2 className={styles["headBand__job__nomination"]}>
-          SERVEUR - BARRISTA
+          BARISTA - SERVEUR
         </h2>
         <div className={styles["headBand__job__lineRight"]} />
       </div>
