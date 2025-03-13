@@ -41,6 +41,16 @@ const ItemsList = ({
     itemsListVariant[`itemsListVariant${layoutId}`] ||
     itemsListVariant.itemsListVariant1;
 
+  if (!source) {
+    console.log("source is null in itemsList");
+    return (
+      <div className="loadingError">
+        There was an error loading ressources in itemsList component, please try
+        again.
+      </div>
+    );
+  }
+
   return (
     <div
       className={currentItem.itemsListClass}
@@ -54,7 +64,7 @@ const ItemsList = ({
       <div className={styles[`itemsList${layoutId}__container`]}>
         {source.items.map((item) => (
           <div
-            key={item.text}
+            key={item.id}
             className={styles[`itemsList${layoutId}__container__item`]}
           >
             <div
@@ -93,7 +103,7 @@ ItemsList.propTypes = {
       PropTypes.shape({
         id: PropTypes.string.isRequired,
         icon: PropTypes.string,
-        text: PropTypes.string.isRequired,
+        text: PropTypes.string,
       })
     ).isRequired,
   }).isRequired,

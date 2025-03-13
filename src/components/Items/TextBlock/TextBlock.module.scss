@@ -198,3 +198,24 @@
     }
   }
 }
+
+.loadingError {
+  width: 100%;
+  height: 80%;
+  @include abs.flxAllCtrBox;
+  font-size: 2rem;
+  font-weight: 500;
+  animation: loadingError 250ms infinite ease-in-out;
+
+  @keyframes loadingError {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

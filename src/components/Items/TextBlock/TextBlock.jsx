@@ -16,6 +16,16 @@ const TextBlock = ({ blockTitle, source, center = false, layoutId }) => {
     textBlockVariant[`textBlockVariant${layoutId}`] ||
     textBlockVariant.textBlockVariant1;
 
+  if (!source) {
+    console.log("source is null in TextBlock");
+    return (
+      <div className="loadingError">
+        There was an error loading ressources in TextBlock component, please try
+        again.
+      </div>
+    );
+  }
+
   return (
     <div className={currentBlock.textBlockClass}>
       {blockTitle && (
