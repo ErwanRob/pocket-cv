@@ -1,0 +1,207 @@
+{
+  "TBL": {
+    "Studies": {
+      "blockTitle": "Formations",
+      "items": [
+        {
+          "id": "study1",
+          "title": "Baccalauréat Scientifique",
+          "subtitle": "Sciences de l'ingénieur",
+
+          "date": "2012 - 2013"
+        },
+        {
+          "id": "study2",
+          "title": "Diplôme d'intégrateur Web",
+          "subtitle": "OpenClassrooms",
+          "text": "Acquisition de compétences via 12 projets de développement web validés par des professionnels. Formation axée sur l'apprentissage du CSS/SCSS, HTML, JavaScript, Search Engine Optimisation (SEO) et React/Redux. ",
+          "date": "2023-2024"
+        },
+        {
+          "id": "study3",
+          "title": "Manipulation d'engins électriques",
+          "subtitle": "Auchan",
+          "text": "Formation à la manipulation de transpalettes et gerbeurs électriques.",
+          "date": "2024 - 2025"
+        }
+      ]
+    },
+    "Experiences": {
+      "blockTitle": "Expériences",
+      "items": [
+        {
+          "id": "exp1",
+          "title": "Head of Design",
+          "subtitle": "CreatLinx, Londres",
+          "text": "Co-fondateur d'une start-up blockchain/cryptomonnaie. Recrutement, validation des designs, développement, et participation à la stratégie. Soft Skills : polyvalence, adaptabilité, créativité.",
+          "date": "2017 - 2019"
+        },
+        {
+          "id": "exp2",
+          "title": "Animateur & Bartender",
+          "subtitle": "Huttopia, Rillé",
+          "text": "Animateur pour enfants/familles et bartender dans un camping durant la période saisonnière estivale.",
+          "date": "2019"
+        },
+        {
+          "id": "exp3",
+          "title": "Barista",
+          "subtitle": " Columbus, Strasbourg",
+          "text": "Préparation et service de boissons chaudes et froides ainsi que de pâtisseries, encaissement, entretien/nettoyage des locaux.",
+          "date": "2019"
+        },
+        {
+          "id": "exp4",
+          "title": "Cuisinier & Serveur",
+          "subtitle": " Factory & Co, Strasbourg",
+          "text": "Préparation des plats en autonomie ou en équipe. Maîtrise des techniques d'assemblage et de cuisson des burgers/bagels/salades. Prise des commandes, service en salle, encaissement, entretien/nettoyage des locaux.",
+          "date": "2019 - 2022"
+        },
+        {
+          "id": "exp5",
+          "title": "Équipier commerce",
+          "subtitle": "Auchan, Illkirch",
+          "text": "Employé polyvalent dans un supermarché au sein de l'équipe de maintenance. Remplissage et maintien des rayons, accueil et conseil des clients, manipulation des stocks. Formation à l'utilisation d'engins spécialisés.",
+          "date": "2024 - 2025"
+        }
+      ]
+    },
+    "Hobbies": {
+      "blockTitle": "Centre d'intérêt",
+      "items": [
+        {
+          "id": "hob1",
+          "title": "Musique",
+          "text": "Guitare, piano, pad, MAO (connaissances avancées sur FL Studio et utilisation de nombreux plugins audio)."
+        }
+      ]
+    },
+    "Profil": {
+      "blockTitle": "Profile",
+      "items": [
+        {
+          "id": "prof1",
+          "title": "Profil",
+          "text": "Fort d'une solide expérience en restauration et service client, j'ai travaillé en tant que barista et à divers postes de service. J'ai ainsi développé ma polyvalence, mon efficacité et le sens de la satisfaction client. Je souhaite mettre à profit mes compétences relationnelles et contribuer à une ambiance conviviale et dynamique. Parallèlement, je suis engagé dans le développement web en freelance, une activité qui stimule ma curiosité et nourrit ma créativité."
+        }
+      ]
+    }
+  },
+  "DTL": {
+    "Contact": {
+      "blockTitle": "Contact",
+      "items": [
+        {
+          "id": "cf1",
+          "icon": "faLinkedinIn",
+          "text": "Erwan Robin"
+        },
+        {
+          "id": "cf2",
+          "icon": "faGithub",
+          "text": "ErwanRob"
+        },
+        {
+          "id": "cf3",
+          "icon": "faInstagram",
+          "text": "erwan.rob"
+        },
+        {
+          "id": "cf4",
+          "icon": "faEarthEurope",
+          "text": "France"
+        },
+        {
+          "id": "cf5",
+          "icon": "faHome",
+          "text": "Strasbourg (67)"
+        },
+        {
+          "id": "cf6",
+          "icon": "faPhone",
+          "text": "06 10 50 28 37"
+        },
+        {
+          "id": "cf7",
+          "icon": "faEnvelope",
+          "text": "erobin.contact@gmail.com"
+        }
+      ]
+    },
+    "Socials": {
+      "blockTitle": "Liens",
+      "items": [
+        {
+          "id": "sc1",
+          "icon": "faGithub",
+          "text": "ErwanRob"
+        },
+        {
+          "id": "sc2",
+          "icon": "faLinkedinIn",
+          "text": "Erwan Robin"
+        },
+        {
+          "id": "sc3",
+          "icon": "faInstagram",
+          "text": "erwan.rob"
+        }
+      ]
+    },
+    "Values": {
+      "blockTitle": "Savoir-être",
+      "items": [
+        {
+          "id": "val1",
+          "text": "Autonomie"
+        },
+        {
+          "id": "val2",
+          "text": "Communication"
+        },
+        {
+          "id": "val3",
+          "text": "Esprit d'équipe"
+        },
+        {
+          "id": "val4",
+          "text": "Persévérance"
+        }
+      ]
+    },
+    "Skills": {
+      "blockTitle": "Compétences",
+      "items": [
+        {
+          "id": "sk1",
+          "text": "Service"
+        },
+        {
+          "id": "sk2",
+          "text": "Relation client"
+        },
+        {
+          "id": "sk3",
+          "text": "Normes d'Hygiène"
+        },
+        {
+          "id": "sk4",
+          "text": "Manutention"
+        }
+      ]
+    },
+    "Language": {
+      "blockTitle": "Langues",
+      "items": [
+        {
+          "id": "lang1",
+          "text": "Français"
+        },
+        {
+          "id": "lang2",
+          "text": "Anglais (avancé)"
+        }
+      ]
+    }
+  }
+}

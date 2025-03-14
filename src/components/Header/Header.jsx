@@ -4,7 +4,8 @@ import { NavLink } from "react-router-dom";
 import { AnimatePresence, motion as Motion } from "motion/react";
 import { useState } from "react";
 import frFlag from "../../assets/img/icon/frFlag.png";
-import ukFlag from "../../assets/img/icon/ukFlag.png";
+/* import ukFlag from "../../assets/img/icon/ukFlag.png"; */
+import DropDown from "../DropDown/DropDown";
 
 const Header = ({ downloadPDF }) => {
   const [disclaimerOpen, setDisclaimerOpen] = useState("closed");
@@ -71,39 +72,7 @@ const Header = ({ downloadPDF }) => {
           <p>Front-End</p>
           <img src={frFlag} alt="French Flag" />
         </NavLink>
-        <NavLink
-          to="/cv/en/frontEnd"
-          className={({ isActive }) =>
-            isActive
-              ? `${styles["header__nav__link"]} ${styles["header__nav__link--active"]}`
-              : styles["header__nav__link"]
-          }
-        >
-          <p>Front-End</p>
-          <img src={ukFlag} alt="UK Flag" />
-        </NavLink>
-        <NavLink
-          to="/cv/fr/barrista"
-          className={({ isActive }) =>
-            isActive
-              ? `${styles["header__nav__link"]} ${styles["header__nav__link--active"]}`
-              : styles["header__nav__link"]
-          }
-        >
-          <p>Barrista</p>
-          <img src={frFlag} alt="French Flag" />
-        </NavLink>
-        <NavLink
-          to="/cv/en/barrista"
-          className={({ isActive }) =>
-            isActive
-              ? `${styles["header__nav__link"]} ${styles["header__nav__link--active"]}`
-              : styles["header__nav__link"]
-          }
-        >
-          <p>Barrista</p>
-          <img src={ukFlag} alt="UK Flag" />
-        </NavLink>
+        <DropDown />
       </nav>
       <button
         className={styles["header__downloadButton"]}
@@ -121,3 +90,28 @@ Header.propTypes = {
 };
 
 export default Header;
+
+{
+  /* <NavLink
+to="/cv/fr/barrista"
+className={({ isActive }) =>
+  isActive
+    ? `${styles["header__nav__link"]} ${styles["header__nav__link--active"]}`
+    : styles["header__nav__link"]
+}
+>
+<p>Barrista</p>
+<img src={frFlag} alt="French Flag" />
+</NavLink>
+<NavLink
+to="/cv/en/barrista"
+className={({ isActive }) =>
+  isActive
+    ? `${styles["header__nav__link"]} ${styles["header__nav__link--active"]}`
+    : styles["header__nav__link"]
+}
+>
+<p>Barrista</p>
+<img src={ukFlag} alt="UK Flag" />
+</NavLink> */
+}

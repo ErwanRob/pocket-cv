@@ -45,7 +45,6 @@
   }
   &__nav {
     box-sizing: border-box;
-    overflow: hidden;
     @include abs.flxAllCtrBox;
     max-width: 1200px;
     height: 4.5rem;
@@ -70,6 +69,7 @@
       transition: all 0.15s ease-in-out;
       &:hover {
         background-color: abs.$grey;
+        /* border-radius: 4px; */
       }
       &--active {
         background-color: abs.$grey;
