@@ -200,12 +200,14 @@
 }
 
 .loadingError {
+  @include abs.flxAllCtrBox;
   width: 100%;
   height: 80%;
-  @include abs.flxAllCtrBox;
-  font-size: 2rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 1rem;
   font-weight: 500;
-  animation: loadingError 250ms infinite ease-in-out;
+  color: red;
+  animation: loadingError 1s infinite ease-in-out;
 
   @keyframes loadingError {
     0% {

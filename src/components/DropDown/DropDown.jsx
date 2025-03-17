@@ -73,6 +73,30 @@ const DropDown = () => {
               <p>Barrista</p>
               <img src={ukFlag} alt="UK Flag" />
             </NavLink>
+            <NavLink
+              to="/cv/fr/general"
+              onClick={toggleDropDown}
+              className={({ isActive }) =>
+                isActive
+                  ? `${styles["dropDown__content__dropLink"]} ${styles["dropDown__content__dropLink--active"]}`
+                  : styles["dropDown__content__dropLink"]
+              }
+            >
+              <p>General</p>
+              <img src={frFlag} alt="FR Flag" />
+            </NavLink>
+            {/*   <NavLink
+              to="/cv/en/general"
+              onClick={toggleDropDown}
+              className={({ isActive }) =>
+                isActive
+                  ? `${styles["dropDown__content__dropLink"]} ${styles["dropDown__content__dropLink--active"]}`
+                  : styles["dropDown__content__dropLink"]
+              }
+            >
+              <p>General</p>
+              <img src={ukFlag} alt="UK Flag" />
+            </NavLink> */}
           </Motion.div>
         )}
       </AnimatePresence>

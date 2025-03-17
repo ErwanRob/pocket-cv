@@ -44,7 +44,7 @@ const ItemsList = ({
   if (!source) {
     console.log("source is null in itemsList");
     return (
-      <div className="loadingError">
+      <div className={styles.loadingError}>
         There was an error loading ressources in itemsList component, please try
         again.
       </div>

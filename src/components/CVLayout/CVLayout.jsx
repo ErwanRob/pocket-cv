@@ -77,6 +77,7 @@ const CVLayout = ({ layoutType, data }) => {
       },
     },
     layout2: {
+      //Barrista
       gridClass: styles.layoutGrid2,
       section: {
         top: () => <HeadBand />,
@@ -85,6 +86,10 @@ const CVLayout = ({ layoutType, data }) => {
             <TextBlock
               source={data.TBL.Profil.items[0]}
               center={true}
+              customStyle={{
+                paddingLeft: "1rem",
+                paddingRight: "1rem",
+              }}
               layoutId={layoutId}
             />
             <Portrait layoutId={layoutId} />
@@ -124,7 +129,10 @@ const CVLayout = ({ layoutType, data }) => {
               source={data.TBL.Experiences.items[1]}
               layoutId={layoutId}
             />
-            {/*   <TextBlock source={data.TBL.Experiences[0]} layoutId={layoutId} /> */}
+            <TextBlock
+              source={data.TBL.Experiences.items[0]}
+              layoutId={layoutId}
+            />
             <TextBlock
               blockTitle={data.TBL.Studies.blockTitle}
               source={data.TBL.Studies.items[2]}
@@ -132,11 +140,11 @@ const CVLayout = ({ layoutType, data }) => {
             />
             <TextBlock source={data.TBL.Studies.items[1]} layoutId={layoutId} />
             <TextBlock source={data.TBL.Studies.items[0]} layoutId={layoutId} />
-            <TextBlock
+            {/* <TextBlock
               blockTitle={data.TBL.Hobbies.blockTitle}
               source={data.TBL.Hobbies.items[0]}
               layoutId={layoutId}
-            />
+            /> */}
           </>
         ),
         bottom: null,
