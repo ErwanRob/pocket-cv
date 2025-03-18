@@ -100,6 +100,11 @@
       "blockTitle": "Contact",
       "items": [
         {
+          "id": "cf0",
+          "icon": "faGlobe",
+          "text": "erwanrobin.com"
+        },
+        {
           "id": "cf1",
           "icon": "faLinkedinIn",
           "text": "Erwan Robin"

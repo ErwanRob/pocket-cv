@@ -15,7 +15,7 @@ const BaristaConfig = (data, layoutId) => {
           center={true}
           layoutId={layoutId}
           customStyle={{
-            padding: "0.25rem 0.75rem 0.25rem 1.5rem",
+            padding: "1.25rem 0.75rem 0.25rem 1.5rem",
           }}
         />
         <Portrait layoutId={layoutId} />

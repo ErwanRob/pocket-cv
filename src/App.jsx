@@ -15,7 +15,7 @@ function App() {
       const day = today.getDate();
       const month = today.getMonth() + 1;
       const year = today.getFullYear();
-      const fileName = `CV_ErwanRobin_${day}-${month}-${year}.pdf`;
+      const fileName = `CV_ErwanRobin_JobName_${day}-${month}-${year}.pdf`;
       const options = {
         filename: fileName,
         image: {

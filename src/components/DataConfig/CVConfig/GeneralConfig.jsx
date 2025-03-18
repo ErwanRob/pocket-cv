@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 
 const GeneralConfig = (data, layoutId) => {
   return {
-    top: () => <HeadBand title="EMPLOYE POLYVALENT" />,
+    top: () => <HeadBand title="EMPLOYÉ POLYVALENT" />,
     left: () => (
       <>
         <TextBlock
@@ -15,7 +15,7 @@ const GeneralConfig = (data, layoutId) => {
           center={true}
           layoutId={layoutId}
           customStyle={{
-            padding: "0.25rem 0.75rem 0.25rem 1.5rem",
+            padding: "1rem 0.75rem 0.25rem 1rem",
           }}
         />
         <Portrait layoutId={layoutId} />

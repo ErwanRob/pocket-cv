@@ -82,7 +82,7 @@
         {
           "id": "prof1",
           "title": "Profil",
-          "text": "Fort d'une solide expérience en restauration et service client, j'ai travaillé en tant que barista et à divers postes de service. J'ai ainsi développé ma polyvalence, mon efficacité et le sens de la satisfaction client. Je souhaite mettre à profit mes compétences relationnelles et contribuer à une ambiance conviviale et dynamique. Parallèlement, je me consacre au développement web en freelance, une activité qui stimule ma curiosité et nourrit ma créativité."
+          "text": "Fort d'une solide expérience en restauration et service client, j'ai travaillé en tant que barista et à divers postes de service. J'ai ainsi développé ma polyvalence, mon efficacité et le sens de la satisfaction client. Je souhaite mettre à profit mes compétences relationnelles et contribuer à une ambiance conviviale et dynamique. Parallèlement, je me consacre au développement web en freelance, une activité qui stimule ma curiosité et nourrit ma créativité. Pour plus d'informations, je vous invite à visiter mon site web: www.erwanrobin.com"
         }
       ]
     }
@@ -91,6 +91,11 @@
     "Contact": {
       "blockTitle": "Contact",
       "items": [
+        {
+          "id": "cf0",
+          "icon": "faGlobe",
+          "text": "erwanrobin.com"
+        },
         {
           "id": "cf1",
           "icon": "faLinkedinIn",
@@ -182,7 +187,7 @@
         },
         {
           "id": "sk3",
-          "text": "Normes d'Hygiène"
+          "text": "Normes d'hygiène"
         },
         {
           "id": "sk4",

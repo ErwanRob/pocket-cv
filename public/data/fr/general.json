@@ -33,21 +33,21 @@
           "id": "exp1",
           "title": "Opérateur sur chaîne de production",
           "subtitle": "Valeo, Sens",
-          "text": "Stagiaire sur chaine de production, puis au service qualité pour l'analyse et détection de défauts sur les machines, impactant les phares fabriqués (réduction de 70% des rayures)",
+          "text": "Stagiaire sur chaîne de production, puis au service qualité pour l'analyse et détection de défauts sur les machines, impactant les phares fabriqués (réduction de 70% des rayures).",
           "date": "2013"
         },
         {
           "id": "exp2",
           "title": "Ouvrier en travaux publics",
           "subtitle": "Roger Martin, Belfort",
-          "text": "Stagiaire - Assistance, topographie, travaux manuels",
+          "text": "Stagiaire - Assistance, topographie, travaux manuels.",
           "date": "2014"
         },
         {
           "id": "exp3",
           "title": "Manutentionnaire",
           "subtitle": "Denco, Sens ",
-          "text": "Opérateur sur chaine de production. Réception de dalles, vérification de la qualité, cerclage.",
+          "text": "Opérateur sur chaîne de production. Réception de dalles, vérification de la qualité, cerclage.",
           "date": "2015"
         },
         {
@@ -61,7 +61,7 @@
           "id": "exp5",
           "title": "Diverses fonctions dans la restauration & l'animation",
           "subtitle": "KFC, Huttopia, Columbus, Factory & Co, Strasbourg",
-          "text": "Préparation des plats et des boissons chaudes/froides en autonomie ou en équipe. Maîtrise des techniques d'assemblage et de cuisson. Prise des commandes, service en salle, encaissement, entretien/nettoyage des locaux. Animateur pour enfants/familles et bartender dans un camping",
+          "text": "Préparation des plats et des boissons chaudes/froides en autonomie ou en équipe. Maîtrise des techniques d'assemblage et de cuisson. Prise des commandes, service en salle, encaissement, entretien/nettoyage des locaux. Animateur pour enfants/familles et bartender dans un camping.",
           "date": "2018-2022"
         },
 
@@ -90,7 +90,7 @@
         {
           "id": "prof1",
           "title": "Profil",
-          "text": "Fort d'une solide expérience en restauration, service client et manutention, j'ai travaillé en tant que manutentionnaire, employé polyvalent, barista et à divers postes de service. J'ai ainsi développé ma polyvalence, mon efficacité et le sens de la satisfaction client. Je souhaite mettre à profit mes compétences et contribuer à une ambiance conviviale et dynamique. Parallèlement, je me consacre au développement web en freelance, une activité qui stimule ma curiosité et nourrit ma créativité."
+          "text": "Fort d'une solide expérience en restauration, service client et manutention, j'ai travaillé en tant que manutentionnaire, employé polyvalent, barista et à divers postes de service. J'ai ainsi développé ma polyvalence, mon efficacité et le sens de la satisfaction client. Je souhaite mettre à profit mes compétences et contribuer à une ambiance conviviale et dynamique. Parallèlement, je me consacre au développement web en freelance, une activité qui stimule ma curiosité et nourrit ma créativité. Pour plus d'informations, je vous invite à visiter mon site: erwanrobin.com"
         }
       ]
     }
@@ -99,6 +99,11 @@
     "Contact": {
       "blockTitle": "Contact",
       "items": [
+        {
+          "id": "cf0",
+          "icon": "faGlobe",
+          "text": "erwanrobin.com"
+        },
         {
           "id": "cf1",
           "icon": "faLinkedinIn",
@@ -190,7 +195,7 @@
         },
         {
           "id": "sk3",
-          "text": "Normes d'Hygiène"
+          "text": "Normes d'hygiène"
         },
         {
           "id": "sk4",
