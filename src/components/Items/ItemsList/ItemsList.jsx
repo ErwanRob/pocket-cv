@@ -46,7 +46,7 @@ const ItemsList = ({
     return (
       <div className={styles.loadingError}>
         There was an error loading ressources in itemsList component, please try
-        again.
+        again. Verify data target in CVConfig & json.
       </div>
     );
   }

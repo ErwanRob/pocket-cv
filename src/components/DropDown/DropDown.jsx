@@ -50,7 +50,7 @@ const DropDown = () => {
               <img src={ukFlag} alt="UK Flag" />
             </NavLink>
             <NavLink
-              to="/cv/fr/barrista"
+              to="/cv/fr/barista"
               onClick={toggleDropDown}
               className={({ isActive }) =>
                 isActive
@@ -58,11 +58,11 @@ const DropDown = () => {
                   : styles["dropDown__content__dropLink"]
               }
             >
-              <p>Barrista</p>
+              <p>Barista</p>
               <img src={frFlag} alt="French Flag" />
             </NavLink>
             <NavLink
-              to="/cv/en/barrista"
+              to="/cv/en/barista"
               onClick={toggleDropDown}
               className={({ isActive }) =>
                 isActive
@@ -70,7 +70,7 @@ const DropDown = () => {
                   : styles["dropDown__content__dropLink"]
               }
             >
-              <p>Barrista</p>
+              <p>Barista</p>
               <img src={ukFlag} alt="UK Flag" />
             </NavLink>
             <NavLink

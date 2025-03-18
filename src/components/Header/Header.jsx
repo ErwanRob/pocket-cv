@@ -3,8 +3,7 @@ import styles from "./Header.module.scss";
 import { NavLink } from "react-router-dom";
 import { AnimatePresence, motion as Motion } from "motion/react";
 import { useState } from "react";
-import frFlag from "../../assets/img/icon/frFlag.png";
-/* import ukFlag from "../../assets/img/icon/ukFlag.png"; */
+/* import frFlag from "../../assets/img/icon/frFlag.png"; */
 import DropDown from "../DropDown/DropDown";
 
 const Header = ({ downloadPDF }) => {
@@ -36,6 +35,7 @@ const Header = ({ downloadPDF }) => {
 
   return (
     <div className={styles.header}>
+      {/*-------- DISCLAIMER -------- */}
       <AnimatePresence mode="popLayout">
         <Motion.div
           className={styles["header__disclaimer"]}
@@ -60,7 +60,8 @@ const Header = ({ downloadPDF }) => {
           </Motion.p>
         </Motion.div>
       </AnimatePresence>
-      <nav className={styles["header__nav"]}>
+      {/* -------- NAVIGATION MENU -------- */}
+      {/* <nav className={styles["header__nav"]}>
         <NavLink
           to="/cv/fr/frontEnd"
           className={({ isActive }) =>
@@ -73,7 +74,8 @@ const Header = ({ downloadPDF }) => {
           <img src={frFlag} alt="French Flag" />
         </NavLink>
         <DropDown />
-      </nav>
+      </nav> */}
+      {/* -------- DOWNLOAD BUTTON -------- */}
       <button
         className={styles["header__downloadButton"]}
         onClick={downloadPDF}
@@ -90,28 +92,3 @@ Header.propTypes = {
 };
 
 export default Header;
-
-{
-  /* <NavLink
-to="/cv/fr/barrista"
-className={({ isActive }) =>
-  isActive
-    ? `${styles["header__nav__link"]} ${styles["header__nav__link--active"]}`
-    : styles["header__nav__link"]
-}
->
-<p>Barrista</p>
-<img src={frFlag} alt="French Flag" />
-</NavLink>
-<NavLink
-to="/cv/en/barrista"
-className={({ isActive }) =>
-  isActive
-    ? `${styles["header__nav__link"]} ${styles["header__nav__link--active"]}`
-    : styles["header__nav__link"]
-}
->
-<p>Barrista</p>
-<img src={ukFlag} alt="UK Flag" />
-</NavLink> */
-}

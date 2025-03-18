@@ -1,20 +1,19 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styles from "./HeadBand.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
-const HeadBand = () => {
+const HeadBand = ({ title }) => {
   return (
     <div className={styles.headBand}>
       {/*   <div className={styles["headBand__initials"]}>E | R</div> */}
       <h1 className={styles["headBand__name"]}>ERWAN ROBIN</h1>
       <div className={styles["headBand__job"]}>
         <div className={styles["headBand__job__lineLeft"]} />
-        <h2 className={styles["headBand__job__nomination"]}>
-          BARISTA - SERVEUR
-        </h2>
+        <h2 className={styles["headBand__job__nomination"]}>{title}</h2>
         <div className={styles["headBand__job__lineRight"]} />
       </div>
       <div className={styles["headBand__shortInfo"]}>
@@ -44,3 +43,7 @@ const HeadBand = () => {
 };
 
 export default HeadBand;
+
+HeadBand.propTypes = {
+  title: PropTypes.string,
+};

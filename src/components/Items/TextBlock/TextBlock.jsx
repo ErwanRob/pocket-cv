@@ -26,7 +26,7 @@ const TextBlock = ({
     return (
       <div className={styles.loadingError}>
         There was an error loading ressources in TextBlock component, please try
-        again.
+        again. Verify data target in CVConfig.jsx & json.
       </div>
     );
   }

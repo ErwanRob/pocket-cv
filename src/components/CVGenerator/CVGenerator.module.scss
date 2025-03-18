@@ -6,8 +6,8 @@
   @include abs.fullSize;
   display: grid;
   gap: 0rem;
-  grid-template-columns: 35% auto;
-  grid-template-rows: auto;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: 100%;
   grid-template-areas: "leftSection rightSection";
 
   &__topSection {
@@ -49,8 +49,8 @@
   @include abs.fullSize;
   display: grid;
   gap: 0rem;
-  grid-template-columns: 33% auto;
-  grid-template-rows: 19% auto;
+  grid-template-columns: 33% 67%;
+  grid-template-rows: 19% 81%;
   grid-template-areas:
     "topSection topSection"
     "leftSection rightSection";

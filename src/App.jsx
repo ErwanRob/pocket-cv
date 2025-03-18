@@ -1,8 +1,10 @@
-import Header from "./components/Header/Header.jsx";
-import Footer from "./components/Footer/Footer.jsx";
-import CV from "./components/CV/CV.jsx";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useRef } from "react";
+import { ReactLenis } from "lenis/react";
+import Header from "./components/Header/Header.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import CVContainer from "./components/CVContainer/CVContainer.jsx";
+import SideMenu from "./components/SideMenu/SideMenu.jsx";
 
 function App() {
   const a4ContainerRef = useRef(null);
@@ -47,19 +49,31 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Header downloadPDF={downloadPDF} />
-      <div className="mainContainer">
-        <div className="a4SizedContainer" ref={a4ContainerRef}>
-          <Routes>
-            <Route path="/" element={<Navigate to="/cv/fr/frontEnd" />} />
-            <Route path="/cv/:language/:cvType" element={<CV />} />
-            <Route path="/*" element={<Navigate to="/" />} />
-          </Routes>
+    <ReactLenis
+      root
+      options={{
+        easing: function easeOutQuint(x) {
+          return 1 - Math.pow(1 - x, 5);
+        },
+        duration: 0.75,
+        wheelMultiplier: 0.5,
+      }}
+    >
+      <div className="App">
+        <Header downloadPDF={downloadPDF} />
+        <SideMenu />
+        <div className="mainContainer">
+          <div className="a4SizedContainer" ref={a4ContainerRef}>
+            <Routes>
+              <Route path="/" element={<Navigate to="/cv/fr/frontEnd" />} />
+              <Route path="/cv/:language/:cvType" element={<CVContainer />} />
+              <Route path="/*" element={<Navigate to="/" />} />
+            </Routes>
+          </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </ReactLenis>
   );
 }
 
