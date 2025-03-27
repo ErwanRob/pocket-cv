@@ -170,23 +170,23 @@
       "items": [
         {
           "id": "val1",
-          "text": "Autonomy"
+          "text": "Proactive Problem-Solving"
         },
         {
           "id": "val2",
-          "text": "Communication"
+          "text": "Collaborative Innovation"
         },
         {
           "id": "val3",
-          "text": "Teamwork"
+          "text": "Transparent Communication"
         },
         {
           "id": "val4",
-          "text": "Attention to detail"
+          "text": "Precision and Quality"
         },
         {
           "id": "val5",
-          "text": "Perseverance"
+          "text": "Continuous Learning"
         }
       ]
     },
@@ -195,7 +195,7 @@
       "items": [
         {
           "id": "sk1",
-          "text": "React.js"
+          "text": "React"
         },
         {
           "id": "sk2",
@@ -204,6 +204,18 @@
         {
           "id": "sk3",
           "text": "CSS/SCSS"
+        },
+        {
+          "id": "sk1",
+          "text": "Redux"
+        },
+        {
+          "id": "sk3",
+          "text": "Motion"
+        },
+        {
+          "id": "sk3",
+          "text": "Git"
         }
       ]
     },
@@ -216,7 +228,7 @@
         },
         {
           "id": "lang2",
-          "text": "English (advanced)"
+          "text": "English"
         }
       ]
     }
