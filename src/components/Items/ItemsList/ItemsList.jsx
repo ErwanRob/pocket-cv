@@ -11,6 +11,7 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faTelegram } from "@fortawesome/free-brands-svg-icons";
 
 const ItemsList = ({
   blockTitle = false,
@@ -28,6 +29,7 @@ const ItemsList = ({
     faLinkedinIn,
     faGithub,
     faInstagram,
+    faTelegram,
   };
 
   const itemsListVariant = {

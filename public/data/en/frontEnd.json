@@ -12,7 +12,7 @@
         },
         {
           "id": "study2",
-          "title": "Web Integration Diploma",
+          "title": "Web Developer & Integrator Diploma",
           "subtitle": "OpenClassrooms",
           "text": "Acquired skills through 12 professionally validated web development projects. Training focused on CSS/SCSS, HTML, JavaScript, Search Engine Optimization (SEO), and React/Redux.",
           "date": "2023-2024"
@@ -33,15 +33,15 @@
           "id": "exp1",
           "title": "Head of Design",
           "subtitle": "CreatLinx, London",
-          "text": "Co-founder of a blockchain/cryptocurrency startup. Involved in recruitment, design validation, development, and strategic planning. Demonstrated versatility, adaptability, and creativity.",
+          "text": "Co-founder of a blockchain/cryptocurrency startup. Involved in recruitment, design validation, development, and organizational planning. Balanced diverse roles from team building to strategic direction within a dynamic startup environment.",
           "date": "2017 - 2019"
         },
         {
           "id": "exp2",
-          "title": "Various Roles in the Hospitality Industry",
-          "subtitle": "Huttopia, Columbus, Factory & Co, Strasbourg",
-          "text": "Served as a barista for 2 months, worked as a cook and waiter for 2 years, and performed as an event host and bartender at a campsite during the seasonal period.",
-          "date": "2019 - 2022"
+          "title": "Freelance Web Developer",
+          "subtitle": "Independent",
+          "text": "Developed a comprehensive personal portfolio to launch freelance web development services. Focusing on creating a robust showcase of technical skills and design capabilities to attract potential clients.",
+          "date": "2025 - Present"
         },
         {
           "id": "exp3",
@@ -67,31 +67,31 @@
       "items": [
         {
           "id": "prof1",
-          "title": "Profile",
-          "text": "Driven by a passion for web development, I have acquired valuable experience in the hospitality and customer service sectors. As a self-taught and quick learner, I am seeking a role that enables me to advance my personal projects while meeting my professional objectives."
+          "subtitle": "FRONT-END WEB DEVELOPER & INTEGRATOR",
+          "text": "A dynamic and diploma-holding Web Front-End Developer, my solid mastery of key programming languages and passion for user experience position me as a professional ready to tackle stimulating challenges. Seeking opportunities within an innovative team to implement my skills through a creative and user-centered approach."
         }
       ]
     }
   },
   "DTL": {
     "SkillsHeadline": {
-      "blockTitle": "Compétences Principales",
+      "blockTitle": "Core Skills",
       "items": [
         {
           "id": "sh1",
-          "text": "Développement de la partie Front-end d'un site web."
+          "text": "Front-end web development"
         },
         {
           "id": "sh2",
-          "text": "Amelioration SEO (Search Engine Optimisation)"
+          "text": "Search Engine Optimization (SEO)"
         },
         {
           "id": "sh3",
-          "text": "Experience utilisateur / UX design"
+          "text": "User Experience (UI/UX) Design"
         },
         {
           "id": "sh4",
-          "text": "Maintenance et tests d'un site web"
+          "text": "Website Maintenance and Testing"
         }
       ]
     },
@@ -120,21 +120,26 @@
         },
         {
           "id": "cf4",
+          "icon": "faTelegram",
+          "text": "ronerob"
+        },
+        {
+          "id": "cf5",
           "icon": "faEarthEurope",
           "text": "France"
         },
         {
-          "id": "cf5",
-          "icon": "faHome",
-          "text": "Strasbourg (67)"
-        },
-        {
           "id": "cf6",
-          "icon": "faPhone",
-          "text": "06 10 50 28 37"
+          "icon": "faHome",
+          "text": "Strasbourg"
         },
         {
           "id": "cf7",
+          "icon": "faPhone",
+          "text": "(+33) 6 10 50 28 37"
+        },
+        {
+          "id": "cf8",
           "icon": "faEnvelope",
           "text": "erobin.contact@gmail.com"
         }
@@ -177,6 +182,10 @@
         },
         {
           "id": "val4",
+          "text": "Attention to detail"
+        },
+        {
+          "id": "val5",
           "text": "Perseverance"
         }
       ]
@@ -186,15 +195,15 @@
       "items": [
         {
           "id": "sk1",
-          "text": "Service"
+          "text": "React.js"
         },
         {
           "id": "sk2",
-          "text": "Customer Relations"
+          "text": "Javascript"
         },
         {
           "id": "sk3",
-          "text": "Manual Handling"
+          "text": "CSS/SCSS"
         }
       ]
     },
@@ -207,7 +216,7 @@
         },
         {
           "id": "lang2",
-          "text": "English (Advanced)"
+          "text": "English (advanced)"
         }
       ]
     }

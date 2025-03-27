@@ -47,12 +47,12 @@ const FrontEndConfig = (data, layoutId) => {
           layoutId={layoutId}
           color={"#000"}
         />
-
         <TextBlock
           blockTitle={data.TBL.Experiences.blockTitle}
-          source={data.TBL.Experiences.items[0]}
+          source={data.TBL.Experiences.items[1]}
           layoutId={layoutId}
         />
+        <TextBlock source={data.TBL.Experiences.items[0]} layoutId={layoutId} />
         <TextBlock
           blockTitle={data.TBL.Studies.blockTitle}
           source={data.TBL.Studies.items[1]}
