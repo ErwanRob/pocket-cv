@@ -1,13 +1,17 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { ReactLenis } from "lenis/react";
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import CVContainer from "./components/CVContainer/CVContainer.jsx";
 import SideMenu from "./components/SideMenu/SideMenu.jsx";
+import RouteParamsWrapper from "./components/RouteParamsWrapper.jsx";
 
 function App() {
   const a4ContainerRef = useRef(null);
+  const [currentCvType, setCurrentCvType] = useState("frontEnd");
+  const [currentLanguage, setCurrentLanguage] = useState("fr");
+
   const downloadPDF = () => {
     import("html2pdf.js").then((module) => {
       const html2pdf = module.default;
@@ -15,7 +19,7 @@ function App() {
       const day = today.getDate();
       const month = today.getMonth() + 1;
       const year = today.getFullYear();
-      const fileName = `CV_ErwanRobin_JobName_${day}-${month}-${year}.pdf`;
+      const fileName = `CV_ErwanRobin_${currentCvType}_${day}-${month}-${year}.pdf`;
       const options = {
         filename: fileName,
         image: {
@@ -66,7 +70,25 @@ function App() {
           <div className="a4SizedContainer" ref={a4ContainerRef}>
             <Routes>
               <Route path="/" element={<Navigate to="/cv/fr/frontEnd" />} />
-              <Route path="/cv/:language/:cvType" element={<CVContainer />} />
+              <Route
+                path="/cv/:language/:cvType"
+                element={
+                  <RouteParamsWrapper>
+                    {({ language, cvType }) => {
+                      //update file name based on url params
+                      if (language !== currentLanguage) {
+                        setCurrentLanguage(language);
+                      }
+                      if (cvType !== currentCvType) {
+                        setCurrentCvType(cvType);
+                      }
+                      return (
+                        <CVContainer language={language} cvType={cvType} />
+                      );
+                    }}
+                  </RouteParamsWrapper>
+                }
+              />
               <Route path="/*" element={<Navigate to="/" />} />
             </Routes>
           </div>

@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
 import styles from "./CVContainer.module.scss";
 import CVGenerator from "../CVGenerator/CVGenerator.jsx";
 import { getSectionConfig } from "../DataConfig/SectionConfig.jsx";
 
-const CVContainer = () => {
-  const { language, cvType } = useParams();
+const CVContainer = ({ language, cvType }) => {
   const [data, setData] = useState(null);
   const [layoutId, setLayoutId] = useState("1");
 
