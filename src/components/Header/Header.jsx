@@ -3,8 +3,6 @@ import styles from "./Header.module.scss";
 import { NavLink } from "react-router-dom";
 import { AnimatePresence, motion as Motion } from "motion/react";
 import { useState } from "react";
-/* import frFlag from "../../assets/img/icon/frFlag.png"; */
-import DropDown from "../DropDown/DropDown";
 
 const Header = ({ downloadPDF }) => {
   const [disclaimerOpen, setDisclaimerOpen] = useState("closed");
@@ -60,21 +58,6 @@ const Header = ({ downloadPDF }) => {
           </Motion.p>
         </Motion.div>
       </AnimatePresence>
-      {/* -------- NAVIGATION MENU -------- */}
-      {/* <nav className={styles["header__nav"]}>
-        <NavLink
-          to="/cv/fr/frontEnd"
-          className={({ isActive }) =>
-            isActive
-              ? `${styles["header__nav__link"]} ${styles["header__nav__link--active"]}`
-              : styles["header__nav__link"]
-          }
-        >
-          <p>Front-End</p>
-          <img src={frFlag} alt="French Flag" />
-        </NavLink>
-        <DropDown />
-      </nav> */}
       {/* -------- DOWNLOAD BUTTON -------- */}
       <button
         className={styles["header__downloadButton"]}
@@ -88,7 +71,26 @@ const Header = ({ downloadPDF }) => {
 
 Header.propTypes = {
   downloadPDF: PropTypes.func.isRequired,
-  handleDownloadImg: PropTypes.func.isRequired,
 };
 
 export default Header;
+
+{
+  /* -------- NAVIGATION MENU -------- */
+}
+{
+  /* <nav className={styles["header__nav"]}>
+        <NavLink
+          to="/cv/fr/frontEnd"
+          className={({ isActive }) =>
+            isActive
+              ? `${styles["header__nav__link"]} ${styles["header__nav__link--active"]}`
+              : styles["header__nav__link"]
+          }
+        >
+          <p>Front-End</p>
+          <img src={frFlag} alt="French Flag" />
+        </NavLink>
+        <DropDown />
+      </nav> */
+}
