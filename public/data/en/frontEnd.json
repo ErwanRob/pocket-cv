@@ -38,7 +38,7 @@
         },
         {
           "id": "exp2",
-          "title": "Freelance Web Developer",
+          "title": "Freelance Web Developer - React/Next",
           "subtitle": "Independent",
           "text": "Developed a comprehensive personal portfolio to launch freelance web development services. Focusing on creating a robust showcase of technical skills and design capabilities to attract potential clients.",
           "date": "2025 - Present"
@@ -67,6 +67,7 @@
       "items": [
         {
           "id": "prof1",
+          "title": "ERWAN ROBIN",
           "subtitle": "FRONT-END WEB DEVELOPER & INTEGRATOR",
           "text": "A dynamic and diploma-holding Web Front-End Developer, my solid mastery of key programming languages and passion for user experience position me as a professional ready to tackle stimulating challenges. Seeking opportunities within an innovative team to implement my skills through a creative and user-centered approach."
         }
@@ -101,7 +102,8 @@
         {
           "id": "cf0",
           "icon": "faGlobe",
-          "text": "erwanrobin.com"
+          "text": "erwanrobin.com",
+          "type": "portfolio"
         },
         {
           "id": "cf1",
@@ -195,7 +197,7 @@
       "items": [
         {
           "id": "sk1",
-          "text": "React"
+          "text": "React/Next"
         },
         {
           "id": "sk2",
@@ -206,15 +208,15 @@
           "text": "CSS/SCSS"
         },
         {
-          "id": "sk1",
+          "id": "sk4",
           "text": "Redux"
         },
         {
-          "id": "sk3",
+          "id": "sk5",
           "text": "Motion"
         },
         {
-          "id": "sk3",
+          "id": "sk6",
           "text": "Git"
         }
       ]

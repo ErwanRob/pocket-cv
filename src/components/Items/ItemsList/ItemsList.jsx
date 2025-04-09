@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./ItemsList.module.scss";
 import PropTypes from "prop-types";
+import SitePointer from "../SitePointer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -93,6 +94,7 @@ const ItemsList = ({
             <p className={styles[`itemsList${layoutId}__container__item__txt`]}>
               {item.text}
             </p>
+            {item.type ? item.type === "portfolio" && <SitePointer /> : null}
           </div>
         ))}
       </div>

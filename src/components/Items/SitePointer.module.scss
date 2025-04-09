@@ -1,0 +1,18 @@
+@use "../../styles/abstracts" as abs;
+
+.sitePointer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 1.5rem;
+  height: 100%;
+  margin: 0 0 -0.375rem 0.5rem;
+  z-index: 10;
+  transform: rotate(-10deg);
+  background-color: transparent;
+
+  &__icon {
+    font-size: 1.125rem;
+    color: abs.$light-grey;
+  }
+}

@@ -14,7 +14,7 @@
           "id": "study2",
           "title": "Diplôme d'intégrateur Web",
           "subtitle": "OpenClassrooms",
-          "text": "Acquisition de compétences via 12 projets de développement web validés par des professionnels. Formation axée sur l'apprentissage du CSS/SCSS, HTML, JavaScript, Search Engine Optimisation (SEO) et React/Redux, ",
+          "text": "Acquisition de compétences via 12 projets de développement web validés par des professionnels. Formation axée sur l'apprentissage du CSS/SCSS, HTML, JavaScript, Search Engine Optimisation (SEO) et React/Redux.",
           "date": "2023-2024"
         },
         {
@@ -38,10 +38,10 @@
         },
         {
           "id": "exp2",
-          "title": "Diverses fonctions dans la restauration",
-          "subtitle": "Huttopia, Columbus, Factory & Co, Strasbourg",
-          "text": "Barista chez Columbus (2 mois). Cuisinier et serveur dans un restaurant pendant 2 ans. Animateur et Bartender dans un camping durant la période saisonnière.",
-          "date": "2019 - 2022"
+          "title": "Développeur Web Freelance - React/Next",
+          "subtitle": "Indépendant",
+          "text": "Realisation d'un portfolio personnel complet (erwanrobin.com), et d'autre projets pour lancer mes services de développement web freelance. En mettant l'accent sur la création d'une vitrine solide de compétences techniques et de capacités en design pour attirer des clients potentiels.",
+          "date": "2025 - Présent"
         },
         {
           "id": "exp3",
@@ -63,13 +63,13 @@
       ]
     },
     "Profil": {
-      "blockTitle": "ERWAN ROBIN",
+      "blockTitle": "Profil",
       "items": [
         {
           "id": "prof1",
-          "title": "Profil",
+          "title": "ERWAN ROBIN",
           "subtitle": "DÉVELOPPEUR INTÉGRATEUR WEB",
-          "text": "Développeur Web Front-End dynamique et diplômé, ma solide maîtrise des langages clés et ma passion pour l'expérience utilisateur font de moi un professionnel prêt à relever des défis stimulants. En quête d'opportunités au sein d'une équipe innovante pour mettre en oeuvre mes compétences avec une approche créative et axée sur l'utilisateur. Je recherche actuellement un poste en France, ou en Suisse"
+          "text": "Développeur Web Front-End dynamique et diplômé, ma solide maîtrise des langages clés et ma passion pour l'expérience utilisateur font de moi un professionnel prêt à relever des défis stimulants. En quête d'opportunités au sein d'une équipe innovante pour mettre en oeuvre mes compétences avec une approche créative et axée sur l'utilisateur. Je recherche actuellement un poste en France, ou à l'étranger."
         }
       ]
     }
@@ -84,15 +84,15 @@
         },
         {
           "id": "sh2",
-          "text": "Amelioration SEO (Search Engine Optimisation)"
+          "text": "Amelioration SEO (Search Engine Optimisation)."
         },
         {
           "id": "sh3",
-          "text": "Experience utilisateur / UX design"
+          "text": "Experience utilisateur / UX design."
         },
         {
           "id": "sh4",
-          "text": "Maintenance et tests d'un site web"
+          "text": "Maintenance et tests d'un site web."
         }
       ]
     },
@@ -102,7 +102,8 @@
         {
           "id": "cf0",
           "icon": "faGlobe",
-          "text": "erwanrobin.com"
+          "text": "erwanrobin.com",
+          "type": "portfolio"
         },
         {
           "id": "cf1",
@@ -166,41 +167,57 @@
       "items": [
         {
           "id": "val1",
-          "text": "Autonomie"
+          "text": "Résolution proactive de problèmes"
         },
         {
           "id": "val2",
-          "text": "Communication"
+          "text": "Innovation collaborative"
         },
         {
           "id": "val3",
-          "text": "Esprit d'equipe"
+          "text": "Communication transparente"
         },
         {
           "id": "val4",
-          "text": "Persévérance"
+          "text": "Précision et qualité"
+        },
+        {
+          "id": "val5",
+          "text": "Apprentissage continu"
         }
       ]
     },
     "Skills": {
-      "blockTitle": "Competences",
+      "blockTitle": "Compétences",
       "items": [
         {
           "id": "sk1",
-          "text": "Service"
+          "text": "React/Next"
         },
         {
           "id": "sk2",
-          "text": "Relation client"
+          "text": "Javascript"
         },
         {
           "id": "sk3",
-          "text": "Manutention"
+          "text": "CSS/SCSS"
+        },
+        {
+          "id": "sk4",
+          "text": "Redux"
+        },
+        {
+          "id": "sk5",
+          "text": "Motion"
+        },
+        {
+          "id": "sk6",
+          "text": "Git"
         }
       ]
     },
     "Language": {
-      "blockTitle": "Langue",
+      "blockTitle": "Langues",
       "items": [
         {
           "id": "lang1",
