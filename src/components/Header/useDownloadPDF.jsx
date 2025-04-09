@@ -20,9 +20,11 @@ const useDownloadPDF = () => {
 
     const options = {
       filename: fileName,
+      margin: 0,
+      pagebreak: { mode: ["avoid-all"] },
       image: { type: "jpeg", quality: 1 },
       html2canvas: {
-        scale: 4,
+        scale: 3.99,
         useCORS: true,
         dpi: 192,
         letterRendering: true,

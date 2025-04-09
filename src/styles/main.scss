@@ -53,27 +53,9 @@ body {
   z-index: 1;
   background-color: transparent;
   overflow: hidden;
-  /* width: 210mm;
-  height: 297mm;*/
   width: 211mm;
   height: 297mm;
-
-  /*   box-shadow: 0px 0px 20px black; */
+  box-sizing: border-box;
+  /* padding: 3mm; */ // Add this for Print Download
   filter: drop-shadow(0px 0px 10px black);
-
-  /* transform: scale(0.99);
-  transform-origin: center; */
-
-  /*   @media print {
-    width: 210mm;
-    height: 297mm;
-  }
-
-  @media screen {
-    width: 210mm;
-    height: 297mm;
-  } */
 }
-
-/*   width: 794px;
-    height: 1123px; */
