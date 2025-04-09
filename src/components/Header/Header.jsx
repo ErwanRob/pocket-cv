@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import styles from "./Header.module.scss";
-import { NavLink } from "react-router-dom";
 import { AnimatePresence, motion as Motion } from "motion/react";
 import { useState } from "react";
 

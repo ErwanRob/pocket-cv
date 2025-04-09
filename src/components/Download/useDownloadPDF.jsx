@@ -24,7 +24,7 @@ const useDownloadPDF = () => {
       pagebreak: { mode: ["avoid-all"] },
       image: { type: "jpeg", quality: 1 },
       html2canvas: {
-        scale: 3.99,
+        scale: 2.99,
         useCORS: true,
         dpi: 192,
         letterRendering: true,

@@ -4,7 +4,7 @@ import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import CVContainer from "./components/CVContainer/CVContainer.jsx";
 import SideMenu from "./components/SideMenu/SideMenu.jsx";
-import useDownloadPDF from "./components/Header/useDownloadPDF.jsx";
+import useDownloadPDF from "./components/Download/useDownloadPDF.jsx";
 
 const DEFAULT_LANGUAGE = "fr";
 const DEFAULT_CV_TYPE = "frontEnd";
