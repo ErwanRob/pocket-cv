@@ -33,6 +33,11 @@ const SideMenu = () => {
       icon: frFlag,
     },
     {
+      title: "Barista2026",
+      path: "/cv/fr/barista2026",
+      icon: frFlag,
+    },
+    {
       title: "General",
       path: "/cv/fr/general",
       icon: frFlag,
